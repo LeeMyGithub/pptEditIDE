@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bf35143e-403f-49cd-995a-fbd0b5f2d63f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://10.10.20.248:9000/Service/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Mes.wsdl" MetadataType="Wsdl" ID="6d92c282-1b8f-465d-995d-b0f69a194dc7" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="df1d0bfd-8cc8-42f2-9f82-40bc5e4df653" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="Mes.xsd" MetadataType="Schema" ID="bc82bfe3-7535-4bfa-8c06-6bec559e3827" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="82aa9d90-3760-4369-838f-e8ca851ef56b" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="jg.Mes.Model.xsd" MetadataType="Schema" ID="95498da6-11b4-49f9-964c-46846a565192" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="jg.Common.xsd" MetadataType="Schema" ID="cbc69441-fb93-4c31-a191-6bdefdff5c46" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="System.Windows.xsd" MetadataType="Schema" ID="d02d3ca0-32eb-448d-9a3e-ea94816b0474" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="3232aaf6-b3d2-460a-b4f2-661060b4c858" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="jg.Mes.Service.xsd" MetadataType="Schema" ID="8eaeecc9-c119-4eea-83dd-41fa2213a8f1" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="System.Windows.Media.xsd" MetadataType="Schema" ID="1f17f492-b0f3-4596-ac8b-6ec1ae0f9e17" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="System.Windows.Media.Animation.xsd" MetadataType="Schema" ID="0f17c3bf-84b7-4a8e-a754-b242d131cb4e" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+    <MetadataFile FileName="System.Windows.Threading.xsd" MetadataType="Schema" ID="e9199f0e-a0cb-49b5-ad6d-40284840da84" SourceId="1" SourceUrl="net.tcp://10.10.20.248:9000/Service/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

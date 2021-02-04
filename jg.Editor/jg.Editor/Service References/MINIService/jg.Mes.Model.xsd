@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/jg.Mes.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/jg.Common" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/System.Windows" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/System.Windows.Media" />
+  <xs:complexType name="TReplyInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/jg.Common" base="q1:BaseValidationEntityOfTReplyInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_judgeInfo" nillable="true" type="tns:TJudgeInfo" />
+          <xs:element name="_postId" nillable="true" type="tns:TPostInfo" />
+          <xs:element name="_replyContent" nillable="true" type="xs:string" />
+          <xs:element name="_replyDateTime" type="xs:dateTime" />
+          <xs:element name="_replyId" type="xs:int" />
+          <xs:element name="_replyUserId" nillable="true" type="tns:StudentInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TReplyInfo" nillable="true" type="tns:TReplyInfo" />
+  <xs:complexType name="TJudgeInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/jg.Common" base="q2:BaseValidationEntityOfTJudgeInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_judgeContent" nillable="true" type="xs:string" />
+          <xs:element name="_judgeDateTime" type="xs:dateTime" />
+          <xs:element name="_judgeId" type="xs:int" />
+          <xs:element name="_judgeLevel" type="xs:int" />
+          <xs:element name="_judgeUserId" nillable="true" type="tns:EmployeeInfo" />
+          <xs:element name="_replyId" nillable="true" type="tns:TReplyInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TJudgeInfo" nillable="true" type="tns:TJudgeInfo" />
+  <xs:complexType name="EmployeeInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/jg.Common" base="q3:BaseValidationEntityOfEmployeeInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_ShowType" type="xs:int" />
+          <xs:element name="_businessinfo" nillable="true" type="tns:Dictionary_BusinessInfo" />
+          <xs:element name="_classListString" nillable="true" type="xs:string" />
+          <xs:element name="_code" nillable="true" type="xs:string" />
+          <xs:element name="_departmentString" nillable="true" type="xs:string" />
+          <xs:element name="_dutiesdescription" nillable="true" type="xs:string" />
+          <xs:element name="_email" nillable="true" type="xs:string" />
+          <xs:element name="_id" type="xs:int" />
+          <xs:element name="_name" nillable="true" type="xs:string" />
+          <xs:element name="_password" nillable="true" type="xs:string" />
+          <xs:element name="_phone" nillable="true" type="xs:string" />
+          <xs:element name="_photo" nillable="true" type="xs:base64Binary" />
+          <xs:element name="_positionaltitle" nillable="true" type="tns:Dictionary_PositionalTitleInfo" />
+          <xs:element name="_roleListString" nillable="true" type="xs:string" />
+          <xs:element name="_role_AuthorityListString" nillable="true" type="xs:string" />
+          <xs:element name="_sex" type="tns:enumSex" />
+          <xs:element name="_x003C_ClassList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfClassInfo" />
+          <xs:element name="_x003C_DepartmentList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfDepartmentInfo" />
+          <xs:element name="_x003C_RoleList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfRoleInfo" />
+          <xs:element name="teacherBBSInfo" nillable="true" type="tns:TTeacherBBSInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmployeeInfo" nillable="true" type="tns:EmployeeInfo" />
+  <xs:complexType name="Dictionary_BusinessInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_id_x003E_k__BackingField" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dictionary_BusinessInfo" nillable="true" type="tns:Dictionary_BusinessInfo" />
+  <xs:complexType name="Dictionary_PositionalTitleInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dictionary_PositionalTitleInfo" nillable="true" type="tns:Dictionary_PositionalTitleInfo" />
+  <xs:simpleType name="enumSex">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="男" />
+      <xs:enumeration value="女" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="enumSex" nillable="true" type="tns:enumSex" />
+  <xs:complexType name="ArrayOfClassInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClassInfo" nillable="true" type="tns:ClassInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClassInfo" nillable="true" type="tns:ArrayOfClassInfo" />
+  <xs:complexType name="ClassInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/jg.Common" base="q4:BaseValidationEntityOfClassInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_IsExpand" type="xs:boolean" />
+          <xs:element name="_departmentPersonCount" type="xs:int" />
+          <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System.Windows" name="_isTbVisabled" nillable="true" type="q5:Visibility" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/System.Windows" name="_isTxtVisabled" nillable="true" type="q6:Visibility" />
+          <xs:element name="_ischecked" nillable="true" type="xs:boolean" />
+          <xs:element name="_name" nillable="true" type="xs:string" />
+          <xs:element name="_orgFunctionName" nillable="true" type="xs:string" />
+          <xs:element name="_orgRepresenting" nillable="true" type="xs:string" />
+          <xs:element name="_tagParentId" type="xs:int" />
+          <xs:element name="_x003C_Children_x003E_k__BackingField" nillable="true" type="tns:ArrayOfClassInfo" />
+          <xs:element name="_x003C_id_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_parentid_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="classInfo" nillable="true" type="tns:ClassInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ClassInfo" nillable="true" type="tns:ClassInfo" />
+  <xs:complexType name="ArrayOfDepartmentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DepartmentInfo" nillable="true" type="tns:DepartmentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDepartmentInfo" nillable="true" type="tns:ArrayOfDepartmentInfo" />
+  <xs:complexType name="DepartmentInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/jg.Common" base="q7:BaseValidationEntityOfDepartmentInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_IsExpand" type="xs:boolean" />
+          <xs:element name="_children" nillable="true" type="tns:ArrayOfDepartmentInfo" />
+          <xs:element name="_departmentPersonCount" type="xs:int" />
+          <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/System.Windows" name="_isTbVisabled" nillable="true" type="q8:Visibility" />
+          <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System.Windows" name="_isTxtVisabled" nillable="true" type="q9:Visibility" />
+          <xs:element name="_ischecked" nillable="true" type="xs:boolean" />
+          <xs:element name="_name" nillable="true" type="xs:string" />
+          <xs:element name="_orgFunctionName" nillable="true" type="xs:string" />
+          <xs:element name="_orgRepresenting" nillable="true" type="xs:string" />
+          <xs:element name="_tagParentId" type="xs:int" />
+          <xs:element name="_x003C_id_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_parentid_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="classInfo" nillable="true" type="tns:DepartmentInfo" />
+          <xs:element name="listClassInfo" nillable="true" type="tns:ArrayOfClassInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DepartmentInfo" nillable="true" type="tns:DepartmentInfo" />
+  <xs:complexType name="ArrayOfRoleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoleInfo" nillable="true" type="tns:RoleInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoleInfo" nillable="true" type="tns:ArrayOfRoleInfo" />
+  <xs:complexType name="RoleInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/jg.Common" base="q10:BaseValidationEntityOfRoleInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_ShowType" type="xs:int" />
+          <xs:element name="_ischecked" nillable="true" type="xs:boolean" />
+          <xs:element name="_name" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_AuthorityList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfRole_AuthorityInfo" />
+          <xs:element name="_x003C_AuthorityUIList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfAuthorityUI" />
+          <xs:element name="_x003C_CreateDate_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_Operator_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_UpdateDate_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_id_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_parentid_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_roleList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfRoleInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RoleInfo" nillable="true" type="tns:RoleInfo" />
+  <xs:complexType name="ArrayOfRole_AuthorityInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Role_AuthorityInfo" nillable="true" type="tns:Role_AuthorityInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRole_AuthorityInfo" nillable="true" type="tns:ArrayOfRole_AuthorityInfo" />
+  <xs:complexType name="Role_AuthorityInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/jg.Common" base="q11:BaseValidationEntityOfRole_AuthorityInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_AuthorityID" type="xs:int" />
+          <xs:element name="_AuthorityLevel" type="xs:int" />
+          <xs:element name="_AuthoritySource" type="xs:int" />
+          <xs:element name="_authoritykey" type="ser:guid" />
+          <xs:element name="_authoritytype" type="tns:AuthorityType" />
+          <xs:element name="_parentId" type="xs:int" />
+          <xs:element name="_role_id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Role_AuthorityInfo" nillable="true" type="tns:Role_AuthorityInfo" />
+  <xs:simpleType name="AuthorityType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UI" />
+      <xs:enumeration value="RES_TREE" />
+      <xs:enumeration value="ASSET" />
+      <xs:enumeration value="COURSE" />
+      <xs:enumeration value="CURRICULUM" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AuthorityType" nillable="true" type="tns:AuthorityType" />
+  <xs:complexType name="ArrayOfAuthorityUI">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AuthorityUI" nillable="true" type="tns:AuthorityUI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuthorityUI" nillable="true" type="tns:ArrayOfAuthorityUI" />
+  <xs:complexType name="AuthorityUI">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/jg.Common" base="q12:BaseValidationEntityOfAuthorityUI1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_authorityUIId" type="xs:int" />
+          <xs:element name="_ischecked" type="xs:boolean" />
+          <xs:element name="_x003C_moduleList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfModuleAuthority" />
+          <xs:element name="authorityUIName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AuthorityUI" nillable="true" type="tns:AuthorityUI" />
+  <xs:complexType name="ArrayOfModuleAuthority">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ModuleAuthority" nillable="true" type="tns:ModuleAuthority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModuleAuthority" nillable="true" type="tns:ArrayOfModuleAuthority" />
+  <xs:complexType name="ModuleAuthority">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/jg.Common" base="q13:BaseValidationEntityOfModuleAuthority1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_ischecked" type="xs:boolean" />
+          <xs:element name="_moduleAuthorityId" type="xs:int" />
+          <xs:element name="_moduleName" nillable="true" type="xs:string" />
+          <xs:element name="_openerationTypeList" nillable="true" type="tns:ArrayOfOperationAuthorityType" />
+          <xs:element name="_parentId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ModuleAuthority" nillable="true" type="tns:ModuleAuthority" />
+  <xs:complexType name="ArrayOfOperationAuthorityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OperationAuthorityType" nillable="true" type="tns:OperationAuthorityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOperationAuthorityType" nillable="true" type="tns:ArrayOfOperationAuthorityType" />
+  <xs:complexType name="OperationAuthorityType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/jg.Common" base="q14:BaseValidationEntityOfOperationAuthorityType1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_ischecked" type="xs:boolean" />
+          <xs:element name="_operationAuthorityTypeContent" nillable="true" type="xs:string" />
+          <xs:element name="_operationAuthorityTypeId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperationAuthorityType" nillable="true" type="tns:OperationAuthorityType" />
+  <xs:complexType name="TTeacherBBSInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/jg.Common" base="q15:BaseValidationEntityOfTJudgeInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_teacherBBSId" type="xs:int" />
+          <xs:element name="_teacherBBSLevel" type="xs:int" />
+          <xs:element name="_teacherBBSStatus" type="xs:boolean" />
+          <xs:element name="_teacherId" nillable="true" type="tns:EmployeeInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TTeacherBBSInfo" nillable="true" type="tns:TTeacherBBSInfo" />
+  <xs:complexType name="TPostInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/jg.Common" base="q16:BaseValidationEntityOfTPostInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_NewImg" type="xs:boolean" />
+          <xs:element name="_PostCountImg" type="xs:boolean" />
+          <xs:element name="_ReplyCountImg" type="xs:boolean" />
+          <xs:element name="_addPostDateTime" type="xs:dateTime" />
+          <xs:element name="_addPostUserId" nillable="true" type="tns:EmployeeInfo" />
+          <xs:element name="_classId" nillable="true" type="tns:ClassInfo" />
+          <xs:element name="_dataPostOrReplyCount" nillable="true" type="xs:string" />
+          <xs:element name="_eyOperation" nillable="true" type="tns:EmployeeInfo" />
+          <xs:element name="_judgeInfo" nillable="true" type="tns:TJudgeInfo" />
+          <xs:element name="_postBrowerCount" type="xs:int" />
+          <xs:element name="_postContent" nillable="true" type="xs:string" />
+          <xs:element name="_postId" type="xs:int" />
+          <xs:element name="_postReplyCount" type="xs:int" />
+          <xs:element name="_postTittle" nillable="true" type="xs:string" />
+          <xs:element name="_replyInsertList" nillable="true" type="tns:ArrayOfTReplyInfo" />
+          <xs:element name="_replyList" nillable="true" type="tns:ArrayOfTReplyInfo" />
+          <xs:element name="_replyUpdateList" nillable="true" type="tns:ArrayOfTReplyInfo" />
+          <xs:element name="operation" nillable="true" type="tns:StudentInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TPostInfo" nillable="true" type="tns:TPostInfo" />
+  <xs:complexType name="ArrayOfTReplyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TReplyInfo" nillable="true" type="tns:TReplyInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTReplyInfo" nillable="true" type="tns:ArrayOfTReplyInfo" />
+  <xs:complexType name="StudentInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/jg.Common" base="q17:BaseValidationEntityOfStudentInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_ShowType" type="xs:int" />
+          <xs:element name="_class" nillable="true" type="tns:ClassInfo" />
+          <xs:element name="_code" nillable="true" type="xs:string" />
+          <xs:element name="_email" nillable="true" type="xs:string" />
+          <xs:element name="_id" type="xs:int" />
+          <xs:element name="_name" nillable="true" type="xs:string" />
+          <xs:element name="_online" type="xs:boolean" />
+          <xs:element name="_password" nillable="true" type="xs:string" />
+          <xs:element name="_phone" nillable="true" type="xs:string" />
+          <xs:element name="_roleListString" nillable="true" type="xs:string" />
+          <xs:element name="_sex" type="tns:enumSex" />
+          <xs:element name="_x003C_RoleList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfRoleInfo" />
+          <xs:element name="studentBBsId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudentInfo" nillable="true" type="tns:StudentInfo" />
+  <xs:complexType name="ArrayOfTJudgeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TJudgeInfo" nillable="true" type="tns:TJudgeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTJudgeInfo" nillable="true" type="tns:ArrayOfTJudgeInfo" />
+  <xs:complexType name="ArrayOfTStudentBBSInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TStudentBBSInfo" nillable="true" type="tns:TStudentBBSInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTStudentBBSInfo" nillable="true" type="tns:ArrayOfTStudentBBSInfo" />
+  <xs:complexType name="TStudentBBSInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/jg.Common" base="q18:BaseValidationEntityOfTStudentBBSInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_interactLevel" type="xs:int" />
+          <xs:element name="_knowledgeLevel" type="xs:int" />
+          <xs:element name="_studentBBSId" type="xs:int" />
+          <xs:element name="_studentBBSStatus" type="xs:boolean" />
+          <xs:element name="_studentId" nillable="true" type="tns:StudentInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TStudentBBSInfo" nillable="true" type="tns:TStudentBBSInfo" />
+  <xs:complexType name="ArrayOfTTeacherBBSInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TTeacherBBSInfo" nillable="true" type="tns:TTeacherBBSInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTTeacherBBSInfo" nillable="true" type="tns:ArrayOfTTeacherBBSInfo" />
+  <xs:complexType name="ArrayOfCPDPM_AuthorityUI">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_AuthorityUI" nillable="true" type="tns:CPDPM_AuthorityUI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_AuthorityUI" nillable="true" type="tns:ArrayOfCPDPM_AuthorityUI" />
+  <xs:complexType name="CPDPM_AuthorityUI">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/jg.Common" base="q19:BaseValidationEntityOfCPDPM_AuthorityUI1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_authorityUIId" type="xs:int" />
+          <xs:element name="_ischecked" type="xs:boolean" />
+          <xs:element name="_moduleList" nillable="true" type="tns:ArrayOfCPDPM_ModuleAuthority" />
+          <xs:element name="authorityUIName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CPDPM_AuthorityUI" nillable="true" type="tns:CPDPM_AuthorityUI" />
+  <xs:complexType name="ArrayOfCPDPM_ModuleAuthority">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_ModuleAuthority" nillable="true" type="tns:CPDPM_ModuleAuthority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_ModuleAuthority" nillable="true" type="tns:ArrayOfCPDPM_ModuleAuthority" />
+  <xs:complexType name="CPDPM_ModuleAuthority">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://schemas.datacontract.org/2004/07/jg.Common" base="q20:BaseValidationEntityOfCPDPM_ModuleAuthority1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_ischecked" type="xs:boolean" />
+          <xs:element name="_moduleAuthorityId" type="xs:int" />
+          <xs:element name="_moduleName" nillable="true" type="xs:string" />
+          <xs:element name="_openerationTypeList" nillable="true" type="tns:ArrayOfCPDPM_OperationAuthorityType" />
+          <xs:element name="_parentId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CPDPM_ModuleAuthority" nillable="true" type="tns:CPDPM_ModuleAuthority" />
+  <xs:complexType name="ArrayOfCPDPM_OperationAuthorityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_OperationAuthorityType" nillable="true" type="tns:CPDPM_OperationAuthorityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_OperationAuthorityType" nillable="true" type="tns:ArrayOfCPDPM_OperationAuthorityType" />
+  <xs:complexType name="CPDPM_OperationAuthorityType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://schemas.datacontract.org/2004/07/jg.Common" base="q21:BaseValidationEntityOfCPDPM_OperationAuthorityType1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_ischecked" type="xs:boolean" />
+          <xs:element name="_operationAuthorityTypeContent" nillable="true" type="xs:string" />
+          <xs:element name="_operationAuthorityTypeId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CPDPM_OperationAuthorityType" nillable="true" type="tns:CPDPM_OperationAuthorityType" />
+  <xs:complexType name="CPDPM_User">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.datacontract.org/2004/07/jg.Common" base="q22:BaseValidationEntityOfCPDPM_User1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_RoleList" nillable="true" type="tns:ArrayOfCPDPM_Role" />
+          <xs:element name="_showtype" type="xs:int" />
+          <xs:element name="_user_addtime" type="xs:dateTime" />
+          <xs:element name="_user_attgropu_id" type="xs:int" />
+          <xs:element name="_user_attgroup" type="xs:int" />
+          <xs:element name="_user_lastlogintime" type="xs:dateTime" />
+          <xs:element name="_user_logname" nillable="true" type="xs:string" />
+          <xs:element name="_user_no" type="xs:int" />
+          <xs:element name="_user_password" nillable="true" type="xs:string" />
+          <xs:element name="_user_realname" nillable="true" type="xs:string" />
+          <xs:element name="_user_sex" nillable="true" type="xs:string" />
+          <xs:element name="_user_status" type="xs:boolean" />
+          <xs:element name="_user_ul_id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CPDPM_User" nillable="true" type="tns:CPDPM_User" />
+  <xs:complexType name="ArrayOfCPDPM_Role">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_Role" nillable="true" type="tns:CPDPM_Role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_Role" nillable="true" type="tns:ArrayOfCPDPM_Role" />
+  <xs:complexType name="CPDPM_Role">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/jg.Common" base="q23:BaseValidationEntityOfCPDPM_Role1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_AuthorityUIObservable" nillable="true" type="tns:ArrayOfCPDPM_AuthorityUI" />
+          <xs:element name="_RoleSourceXML" nillable="true" type="xs:string" />
+          <xs:element name="_ShowContent" nillable="true" type="xs:string" />
+          <xs:element name="_createdate" type="xs:dateTime" />
+          <xs:element name="_id" type="xs:int" />
+          <xs:element name="_ischecked" type="xs:boolean" />
+          <xs:element name="_name" nillable="true" type="xs:string" />
+          <xs:element name="_operator" nillable="true" type="xs:string" />
+          <xs:element name="_showtype" type="xs:int" />
+          <xs:element name="_updatedate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CPDPM_Role" nillable="true" type="tns:CPDPM_Role" />
+  <xs:complexType name="ArrayOfSystemLogInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SystemLogInfo" nillable="true" type="tns:SystemLogInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSystemLogInfo" nillable="true" type="tns:ArrayOfSystemLogInfo" />
+  <xs:complexType name="SystemLogInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://schemas.datacontract.org/2004/07/jg.Common" base="q24:BaseValidationEntityOfSystemLogInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_action" nillable="true" type="xs:string" />
+          <xs:element name="_id" type="xs:int" />
+          <xs:element name="_model" nillable="true" type="xs:string" />
+          <xs:element name="_time" type="xs:dateTime" />
+          <xs:element name="_userInfo" nillable="true" type="tns:UserInfo" />
+          <xs:element name="_userType" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SystemLogInfo" nillable="true" type="tns:SystemLogInfo" />
+  <xs:complexType name="UserInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://schemas.datacontract.org/2004/07/jg.Common" base="q25:BaseValidationEntityOfUserInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_userName" nillable="true" type="xs:string" />
+          <xs:element name="_userType" type="xs:int" />
+          <xs:element name="_user_id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserInfo" nillable="true" type="tns:UserInfo" />
+  <xs:complexType name="ArrayOfAuthorityInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AuthorityInfo" nillable="true" type="tns:AuthorityInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuthorityInfo" nillable="true" type="tns:ArrayOfAuthorityInfo" />
+  <xs:complexType name="AuthorityInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://schemas.datacontract.org/2004/07/jg.Common" base="q26:BaseValidationEntityOfAuthorityInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_ischecked" nillable="true" type="xs:boolean" />
+          <xs:element name="_x003C_Key_x003E_k__BackingField" type="ser:guid" />
+          <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_anthorityType_x003E_k__BackingField" type="tns:AuthorityType" />
+          <xs:element name="_x003C_id_x003E_k__BackingField" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AuthorityInfo" nillable="true" type="tns:AuthorityInfo" />
+  <xs:complexType name="ArrayOfDictionary_BusinessInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Dictionary_BusinessInfo" nillable="true" type="tns:Dictionary_BusinessInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDictionary_BusinessInfo" nillable="true" type="tns:ArrayOfDictionary_BusinessInfo" />
+  <xs:complexType name="ArrayOfDictionary_PositionalTitleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Dictionary_PositionalTitleInfo" nillable="true" type="tns:Dictionary_PositionalTitleInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDictionary_PositionalTitleInfo" nillable="true" type="tns:ArrayOfDictionary_PositionalTitleInfo" />
+  <xs:complexType name="ArrayOfAcademicYearInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcademicYearInfo" nillable="true" type="tns:AcademicYearInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAcademicYearInfo" nillable="true" type="tns:ArrayOfAcademicYearInfo" />
+  <xs:complexType name="AcademicYearInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://schemas.datacontract.org/2004/07/jg.Common" base="q27:BaseValidationEntityOfAcademicYearInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_x003C_FirstEndDate_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_FirstList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfCalendarInfo" />
+          <xs:element name="_x003C_FirstStartDate_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_FirstWeekNumber_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_Operator_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_SecondEndDate_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_SecondList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfCalendarInfo" />
+          <xs:element name="_x003C_SecondStartDate_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_SecondWeekNumber_x003E_k__BackingField" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AcademicYearInfo" nillable="true" type="tns:AcademicYearInfo" />
+  <xs:complexType name="ArrayOfCalendarInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CalendarInfo" nillable="true" type="tns:CalendarInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCalendarInfo" nillable="true" type="tns:ArrayOfCalendarInfo" />
+  <xs:complexType name="CalendarInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://schemas.datacontract.org/2004/07/jg.Common" base="q28:BaseValidationEntityOfCalendarInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_customerholiday" type="xs:boolean" />
+          <xs:element name="_dt_replace" type="xs:dateTime" />
+          <xs:element name="_holiday" nillable="true" type="xs:string" />
+          <xs:element name="_isholiday" type="xs:boolean" />
+          <xs:element name="_isweekend" type="xs:boolean" />
+          <xs:element name="_timetablelist" nillable="true" type="tns:ArrayOfTimetableInfo" />
+          <xs:element name="_x003C_Currentdt_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_WeekNumber_x003E_k__BackingField" type="xs:int" />
+          <xs:element xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="holidayList" nillable="true" type="q29:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CalendarInfo" nillable="true" type="tns:CalendarInfo" />
+  <xs:complexType name="ArrayOfTimetableInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TimetableInfo" nillable="true" type="tns:TimetableInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTimetableInfo" nillable="true" type="tns:ArrayOfTimetableInfo" />
+  <xs:complexType name="TimetableInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://schemas.datacontract.org/2004/07/jg.Common" base="q30:BaseValidationEntityOfTimetableInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/System.Windows.Media" name="_background" nillable="true" type="q31:SolidColorBrush" />
+          <xs:element name="_x003C_CalendarId_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_ClassRoom_x003E_k__BackingField" nillable="true" type="tns:ClassRoomInfo" />
+          <xs:element name="_x003C_Class_x003E_k__BackingField" nillable="true" type="tns:ClassInfo" />
+          <xs:element name="_x003C_Curriculum_x003E_k__BackingField" nillable="true" type="tns:CurriculumInfo" />
+          <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_Operator_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_Teacher_x003E_k__BackingField" nillable="true" type="tns:EmployeeInfo" />
+          <xs:element name="_x003C_Timetableitem_x003E_k__BackingField" nillable="true" type="tns:TimetableitemInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TimetableInfo" nillable="true" type="tns:TimetableInfo" />
+  <xs:complexType name="ClassRoomInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q32="http://schemas.datacontract.org/2004/07/jg.Common" base="q32:BaseValidationEntityOfClassRoomInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_x003C_Address_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ClassRoomInfo" nillable="true" type="tns:ClassRoomInfo" />
+  <xs:complexType name="CurriculumInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q33="http://schemas.datacontract.org/2004/07/jg.Common" base="q33:BaseValidationEntityOfCurriculumInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_aggregation_level" nillable="true" type="tns:Dictionary_Aggregation_levelInfo" />
+          <xs:element name="_app_object" nillable="true" type="tns:Dictionary_AppObjectInfo" />
+          <xs:element name="_check" type="xs:boolean" />
+          <xs:element name="_createDate" type="xs:dateTime" />
+          <xs:element name="_description" nillable="true" type="xs:string" />
+          <xs:element name="_id" type="xs:int" />
+          <xs:element name="_isShow" type="xs:int" />
+          <xs:element name="_keyword" nillable="true" type="xs:string" />
+          <xs:element name="_language" nillable="true" type="tns:Dictionary_LanguageInfo" />
+          <xs:element name="_machine" nillable="true" type="tns:Dictionary_MachineInfo" />
+          <xs:element name="_os" nillable="true" type="tns:Dictionary_OSInfo" />
+          <xs:element name="_parentTree" nillable="true" type="tns:Specialty_TreeInfo" />
+          <xs:element name="_remark" nillable="true" type="xs:string" />
+          <xs:element name="_rights" type="xs:boolean" />
+          <xs:element name="_show" type="xs:int" />
+          <xs:element name="_state" type="xs:int" />
+          <xs:element name="_thumbnail" nillable="true" type="xs:string" />
+          <xs:element name="_timelength" type="xs:double" />
+          <xs:element name="_title" nillable="true" type="xs:string" />
+          <xs:element name="_type" nillable="true" type="tns:Dictionary_TypeInfo" />
+          <xs:element name="_typePorject" nillable="true" type="xs:string" />
+          <xs:element name="_url" nillable="true" type="xs:string" />
+          <xs:element name="_version" nillable="true" type="xs:string" />
+          <xs:element name="_version_description" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_Key_x003E_k__BackingField" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CurriculumInfo" nillable="true" type="tns:CurriculumInfo" />
+  <xs:complexType name="Dictionary_Aggregation_levelInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dictionary_Aggregation_levelInfo" nillable="true" type="tns:Dictionary_Aggregation_levelInfo" />
+  <xs:complexType name="Dictionary_AppObjectInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dictionary_AppObjectInfo" nillable="true" type="tns:Dictionary_AppObjectInfo" />
+  <xs:complexType name="Dictionary_LanguageInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dictionary_LanguageInfo" nillable="true" type="tns:Dictionary_LanguageInfo" />
+  <xs:complexType name="Dictionary_MachineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dictionary_MachineInfo" nillable="true" type="tns:Dictionary_MachineInfo" />
+  <xs:complexType name="Dictionary_OSInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dictionary_OSInfo" nillable="true" type="tns:Dictionary_OSInfo" />
+  <xs:complexType name="Specialty_TreeInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q34="http://schemas.datacontract.org/2004/07/jg.Common" base="q34:BaseValidationEntityOfSpecialty_TreeInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/System.Windows" minOccurs="0" name="IsTbVisabled" nillable="true" type="q35:Visibility" />
+          <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/System.Windows" minOccurs="0" name="IsTbVisabledNum" nillable="true" type="q36:Visibility" />
+          <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/System.Windows" minOccurs="0" name="IsTxtVisabled" nillable="true" type="q37:Visibility" />
+          <xs:element minOccurs="0" name="Key" type="ser:guid" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Num" type="xs:int" />
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Specialty_TreeInfo" nillable="true" type="tns:Specialty_TreeInfo" />
+  <xs:complexType name="Dictionary_TypeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dictionary_TypeInfo" nillable="true" type="tns:Dictionary_TypeInfo" />
+  <xs:complexType name="TimetableitemInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q38="http://schemas.datacontract.org/2004/07/jg.Common" base="q38:BaseValidationEntityOfTimetableitemInfo1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_x003C_EndTime_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_StartTime_x003E_k__BackingField" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TimetableitemInfo" nillable="true" type="tns:TimetableitemInfo" />
+  <xs:complexType name="ArrayOfEmployeeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmployeeInfo" nillable="true" type="tns:EmployeeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployeeInfo" nillable="true" type="tns:ArrayOfEmployeeInfo" />
+  <xs:complexType name="ArrayOfEmployee_ClassInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Employee_ClassInfo" nillable="true" type="tns:Employee_ClassInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployee_ClassInfo" nillable="true" type="tns:ArrayOfEmployee_ClassInfo" />
+  <xs:complexType name="Employee_ClassInfo">
+    <xs:sequence>
+      <xs:element name="_class_id" type="xs:int" />
+      <xs:element name="_employee_id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Employee_ClassInfo" nillable="true" type="tns:Employee_ClassInfo" />
+  <xs:complexType name="ArrayOfStudentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudentInfo" nillable="true" type="tns:StudentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudentInfo" nillable="true" type="tns:ArrayOfStudentInfo" />
+  <xs:complexType name="ArrayOfClassRoomInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClassRoomInfo" nillable="true" type="tns:ClassRoomInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClassRoomInfo" nillable="true" type="tns:ArrayOfClassRoomInfo" />
+  <xs:complexType name="ArrayOfTimetableitemInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TimetableitemInfo" nillable="true" type="tns:TimetableitemInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTimetableitemInfo" nillable="true" type="tns:ArrayOfTimetableitemInfo" />
+  <xs:complexType name="ArrayOfTPostInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TPostInfo" nillable="true" type="tns:TPostInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTPostInfo" nillable="true" type="tns:ArrayOfTPostInfo" />
+  <xs:complexType name="ArrayOfCPDPM_DirSourceClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_DirSourceClass" nillable="true" type="tns:CPDPM_DirSourceClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_DirSourceClass" nillable="true" type="tns:ArrayOfCPDPM_DirSourceClass" />
+  <xs:complexType name="CPDPM_DirSourceClass">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q39="http://schemas.datacontract.org/2004/07/jg.Common" base="q39:BaseValidationEntityOfCPDPM_DirSourceClass1GsoOl5m">
+        <xs:sequence>
+          <xs:element name="_Children" nillable="true" type="tns:ArrayOfCPDPM_DirSourceClass" />
+          <xs:element name="_DirSourceClassInfo" nillable="true" type="tns:CPDPM_DirSourceClass" />
+          <xs:element name="_IsExpand" type="xs:boolean" />
+          <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/System.Windows" name="_isTbVisabled" type="q40:Visibility" />
+          <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/System.Windows" name="_isTxtVisabled" type="q41:Visibility" />
+          <xs:element name="_sc_des" nillable="true" type="xs:string" />
+          <xs:element name="_sc_guid" nillable="true" type="xs:string" />
+          <xs:element name="_sc_id" type="xs:int" />
+          <xs:element name="_sc_name" nillable="true" type="xs:string" />
+          <xs:element name="_sc_parentguid" nillable="true" type="xs:string" />
+          <xs:element name="_sc_parentid" type="xs:int" />
+          <xs:element name="_tagParentId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CPDPM_DirSourceClass" nillable="true" type="tns:CPDPM_DirSourceClass" />
+  <xs:complexType name="ArrayOfCPDPM_Source_FullInfo_View">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_Source_FullInfo_View" nillable="true" type="tns:CPDPM_Source_FullInfo_View" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_Source_FullInfo_View" nillable="true" type="tns:ArrayOfCPDPM_Source_FullInfo_View" />
+  <xs:complexType name="CPDPM_Source_FullInfo_View">
+    <xs:sequence>
+      <xs:element name="_LocalInputpath" nillable="true" type="xs:string" />
+      <xs:element name="_LocalOutputpath" nillable="true" type="xs:string" />
+      <xs:element name="_aal_id" type="xs:int" />
+      <xs:element name="_aal_name" nillable="true" type="xs:string" />
+      <xs:element name="_acb_id" type="xs:int" />
+      <xs:element name="_acb_name" nillable="true" type="xs:string" />
+      <xs:element name="_alg_id" type="xs:int" />
+      <xs:element name="_alg_name" nillable="true" type="xs:string" />
+      <xs:element name="_am_id" type="xs:int" />
+      <xs:element name="_am_name" nillable="true" type="xs:string" />
+      <xs:element name="_as_aal_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_acb_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_addtime" nillable="true" type="xs:dateTime" />
+      <xs:element name="_as_agl_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_am_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_asf_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_ast_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_barcode" nillable="true" type="xs:int" />
+      <xs:element name="_as_cct_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_checkstatus" type="xs:boolean" />
+      <xs:element name="_as_cst_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_deleted" type="xs:boolean" />
+      <xs:element name="_as_des" nillable="true" type="xs:string" />
+      <xs:element name="_as_encryptkey" type="ser:guid" />
+      <xs:element name="_as_encryptstatus" type="xs:boolean" />
+      <xs:element name="_as_guid" nillable="true" type="xs:string" />
+      <xs:element name="_as_id" type="xs:int" />
+      <xs:element name="_as_keyword" nillable="true" type="xs:string" />
+      <xs:element name="_as_media_time" nillable="true" type="xs:string" />
+      <xs:element name="_as_name" nillable="true" type="xs:string" />
+      <xs:element name="_as_sc_guid" nillable="true" type="xs:string" />
+      <xs:element name="_as_sc_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_size" type="xs:int" />
+      <xs:element name="_as_stoppage" type="xs:boolean" />
+      <xs:element name="_as_thumbnail" nillable="true" type="xs:string" />
+      <xs:element name="_as_time" nillable="true" type="xs:string" />
+      <xs:element name="_as_upload_user_id" nillable="true" type="xs:int" />
+      <xs:element name="_as_url" nillable="true" type="xs:string" />
+      <xs:element name="_as_verdes" nillable="true" type="xs:string" />
+      <xs:element name="_as_version" nillable="true" type="xs:string" />
+      <xs:element name="_as_xml" nillable="true" type="xs:string" />
+      <xs:element name="_asf_class" nillable="true" type="xs:string" />
+      <xs:element name="_asf_des" nillable="true" type="xs:string" />
+      <xs:element name="_asf_id" type="xs:int" />
+      <xs:element name="_asf_name" nillable="true" type="xs:string" />
+      <xs:element name="_ast_id" type="xs:int" />
+      <xs:element name="_ast_name" nillable="true" type="xs:string" />
+      <xs:element name="_pub_scguid" nillable="true" type="xs:string" />
+      <xs:element name="_pub_scid" type="xs:int" />
+      <xs:element name="_sc_id" type="xs:int" />
+      <xs:element name="_sc_name" nillable="true" type="xs:string" />
+      <xs:element name="_user_no" type="xs:int" />
+      <xs:element name="_user_realname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_Source_FullInfo_View" nillable="true" type="tns:CPDPM_Source_FullInfo_View" />
+  <xs:complexType name="CPDPM_EnCourseWareSource">
+    <xs:sequence>
+      <xs:element name="_CWS_Is_NewVersion" type="xs:boolean" />
+      <xs:element name="_CWS_Is_Score" type="xs:boolean" />
+      <xs:element name="_cws_act_id" nillable="true" type="xs:int" />
+      <xs:element name="_cws_addtime" nillable="true" type="xs:dateTime" />
+      <xs:element name="_cws_adf_id" nillable="true" type="xs:int" />
+      <xs:element name="_cws_ail_id" nillable="true" type="xs:int" />
+      <xs:element name="_cws_ait_id" nillable="true" type="xs:int" />
+      <xs:element name="_cws_alg_id" nillable="true" type="xs:int" />
+      <xs:element name="_cws_amc_id" nillable="true" type="xs:int" />
+      <xs:element name="_cws_aos_id" nillable="true" type="xs:int" />
+      <xs:element name="_cws_chkstatus" type="xs:boolean" />
+      <xs:element name="_cws_createuser" nillable="true" type="xs:string" />
+      <xs:element name="_cws_delete_time" nillable="true" type="xs:dateTime" />
+      <xs:element name="_cws_delete_user" nillable="true" type="xs:int" />
+      <xs:element name="_cws_deleted" type="xs:boolean" />
+      <xs:element name="_cws_des" nillable="true" type="xs:string" />
+      <xs:element name="_cws_guid" nillable="true" type="xs:string" />
+      <xs:element name="_cws_id" type="xs:int" />
+      <xs:element name="_cws_keyword" nillable="true" type="xs:string" />
+      <xs:element name="_cws_lastmodifyuser" nillable="true" type="xs:string" />
+      <xs:element name="_cws_leatime" nillable="true" type="xs:decimal" />
+      <xs:element name="_cws_localpath" nillable="true" type="xs:string" />
+      <xs:element name="_cws_ma_id" type="xs:int" />
+      <xs:element name="_cws_name" nillable="true" type="xs:string" />
+      <xs:element name="_cws_pubstatus" type="xs:boolean" />
+      <xs:element name="_cws_sc_id" nillable="true" type="xs:int" />
+      <xs:element name="_cws_serverpath" nillable="true" type="xs:string" />
+      <xs:element name="_cws_thumbnail" nillable="true" type="xs:string" />
+      <xs:element name="_cws_verdes" nillable="true" type="xs:string" />
+      <xs:element name="_cws_version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_EnCourseWareSource" nillable="true" type="tns:CPDPM_EnCourseWareSource" />
+  <xs:complexType name="ArrayOfCPDPM_AttLanguage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_AttLanguage" nillable="true" type="tns:CPDPM_AttLanguage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_AttLanguage" nillable="true" type="tns:ArrayOfCPDPM_AttLanguage" />
+  <xs:complexType name="CPDPM_AttLanguage">
+    <xs:sequence>
+      <xs:element name="_alg_id" type="xs:int" />
+      <xs:element name="_alg_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_AttLanguage" nillable="true" type="tns:CPDPM_AttLanguage" />
+  <xs:complexType name="ArrayOfCPDPM_AttContext">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_AttContext" nillable="true" type="tns:CPDPM_AttContext" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_AttContext" nillable="true" type="tns:ArrayOfCPDPM_AttContext" />
+  <xs:complexType name="CPDPM_AttContext">
+    <xs:sequence>
+      <xs:element name="_act_id" type="xs:int" />
+      <xs:element name="_act_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_AttContext" nillable="true" type="tns:CPDPM_AttContext" />
+  <xs:complexType name="ArrayOfCPDPM_AttDiffculty">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_AttDiffculty" nillable="true" type="tns:CPDPM_AttDiffculty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_AttDiffculty" nillable="true" type="tns:ArrayOfCPDPM_AttDiffculty" />
+  <xs:complexType name="CPDPM_AttDiffculty">
+    <xs:sequence>
+      <xs:element name="_adf_id" type="xs:int" />
+      <xs:element name="_adf_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_AttDiffculty" nillable="true" type="tns:CPDPM_AttDiffculty" />
+  <xs:complexType name="ArrayOfCPDPM_AttInteractivityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_AttInteractivityType" nillable="true" type="tns:CPDPM_AttInteractivityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_AttInteractivityType" nillable="true" type="tns:ArrayOfCPDPM_AttInteractivityType" />
+  <xs:complexType name="CPDPM_AttInteractivityType">
+    <xs:sequence>
+      <xs:element name="_ait_id" type="xs:int" />
+      <xs:element name="_ait_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_AttInteractivityType" nillable="true" type="tns:CPDPM_AttInteractivityType" />
+  <xs:complexType name="ArrayOfCPDPM_AttInteractivityLevel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_AttInteractivityLevel" nillable="true" type="tns:CPDPM_AttInteractivityLevel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_AttInteractivityLevel" nillable="true" type="tns:ArrayOfCPDPM_AttInteractivityLevel" />
+  <xs:complexType name="CPDPM_AttInteractivityLevel">
+    <xs:sequence>
+      <xs:element name="_ail_id" type="xs:int" />
+      <xs:element name="_ail_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_AttInteractivityLevel" nillable="true" type="tns:CPDPM_AttInteractivityLevel" />
+  <xs:complexType name="ArrayOfCPDPM_AttMachine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_AttMachine" nillable="true" type="tns:CPDPM_AttMachine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_AttMachine" nillable="true" type="tns:ArrayOfCPDPM_AttMachine" />
+  <xs:complexType name="CPDPM_AttMachine">
+    <xs:sequence>
+      <xs:element name="_amc_id" type="xs:int" />
+      <xs:element name="_amc_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_AttMachine" nillable="true" type="tns:CPDPM_AttMachine" />
+  <xs:complexType name="ArrayOfCPDPM_AttOS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPDPM_AttOS" nillable="true" type="tns:CPDPM_AttOS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPDPM_AttOS" nillable="true" type="tns:ArrayOfCPDPM_AttOS" />
+  <xs:complexType name="CPDPM_AttOS">
+    <xs:sequence>
+      <xs:element name="_aos_id" type="xs:int" />
+      <xs:element name="_aos_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPDPM_AttOS" nillable="true" type="tns:CPDPM_AttOS" />
+</xs:schema>

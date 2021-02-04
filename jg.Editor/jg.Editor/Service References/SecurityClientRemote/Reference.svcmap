@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a5cda8e9-0dad-49a2-82b7-8c6b3de4e1ba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://222.73.57.21:43998/Service/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="7b095529-b851-4bae-9445-96c25244a558" SourceId="1" SourceUrl="net.tcp://222.73.57.21:43998/Service/mex" />
+    <MetadataFile FileName="SecurityClient.wsdl" MetadataType="Wsdl" ID="025b3378-22ea-49ad-9fd1-d823f27ca61f" SourceId="1" SourceUrl="net.tcp://222.73.57.21:43998/Service/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="3c227d01-924c-453e-8165-e081a324f5b2" SourceId="1" SourceUrl="net.tcp://222.73.57.21:43998/Service/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="952d920c-f683-4268-80e8-1743e522b534" SourceId="1" SourceUrl="net.tcp://222.73.57.21:43998/Service/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

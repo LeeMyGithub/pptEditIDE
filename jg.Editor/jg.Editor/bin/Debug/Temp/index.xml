@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<List>
+	<File Source="Samples.Infrastructure.dll" Target ="Samples.Infrastructure.dll"/>
+	<File Source="WPFToolkit.Extended.dll" Target ="WPFToolkit.Extended.dll"/>
+	<File Source="Microsoft.Practices.Unity.dll" Target ="Microsoft.Practices.Unity.dll"/>
+	<File Source="Microsoft.Practices.ServiceLocation.dll" Target ="Microsoft.Practices.ServiceLocation.dll"/>
+	<File Source="Microsoft.Practices.Prism.dll" Target ="Microsoft.Practices.Prism.dll"/>
+	<File Source="log4net.dll" Target ="log4net.dll"/>
+	<File Source="jg.Editor.Library.dll" Target ="jg.Editor.Library.dll"/>
+	<File Source="Interop.UnityWebPlayerAXLib.dll" Target ="Interop.UnityWebPlayerAXLib.dll"/>
+	<File Source="Interop.ShockwaveFlashObjects.dll" Target ="Interop.ShockwaveFlashObjects.dll"/>
+	<File Source="AxInterop.UnityWebPlayerAXLib.dll" Target ="AxInterop.UnityWebPlayerAXLib.dll"/>
+	<File Source="AxInterop.ShockwaveFlashObjects.dll" Target ="AxInterop.ShockwaveFlashObjects.dll"/>
+	<File Source="jg.Editor.exe" Target ="jg.Editor.exe"/>
+	<File Source="ffmpeg.exe" Target ="ffmpeg.exe"/>
+	<File Source="Elysium.dll" Target ="Elysium.dll"/>
+	<File Source="Elysium.Notifications.dll" Target ="Elysium.Notifications.dll"/>
+<File Source="Fluent.dll" Target ="Fluent.dll"/>
+<File Source="Geckofx-Core.dll" Target ="Geckofx-Core.dll"/>
+<File Source="Geckofx-Winforms.dll" Target ="Geckofx-Winforms.dll"/>
+<File Source="jg.PCPlayerLibrary.dll" Target ="jg.PCPlayerLibrary.dll"/>
+<File Source="jg.Security.Library.dll" Target ="jg.Security.Library.dll"/>
+<File Source="Microsoft.QualityTools.Testing.Fakes.dll" Target ="Microsoft.QualityTools.Testing.Fakes.dll"/>
+<File Source="Microsoft.Windows.Shell.dll" Target ="Microsoft.Windows.Shell.dll"/>
+<File Source="Skybound.Gecko.dll" Target ="Skybound.Gecko.dll"/>
+<File Source="System.Windows.Interactivity.dll" Target ="System.Windows.Interactivity.dll"/>
+<File Source=" WPFToolkit.Extended.dll" Target =" WPFToolkit.Extended.dll"/>   
+	<Folder Source="PCPlayer" Target ="PCPlayer"/>
+        <Folder Source="Help" Target ="Help"/>
+</List>

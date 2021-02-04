@@ -1,0 +1,54 @@
+﻿<Window x:Class="jg.UpdateClient.WindowMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowMain"   Height="540"  Width="525" Background="Transparent" WindowStyle="None" AllowsTransparency="True"   WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFF2F2F2"  Height="530"  Width="505">
+        <Grid.Effect>
+            <DropShadowEffect BlurRadius="9" Color="#FF000000" Direction="-60" Opacity="1" ShadowDepth="0"/>
+        </Grid.Effect>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+            <RowDefinition  Height="auto"/>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--1 #FF2D3340 #FFFF4D00-->
+        <Grid Grid.Row="0" Background="#FFFF4D00" Height="76" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="#FF2D3340" Grid.Column="0"  Grid.ColumnSpan="3" Height="72"  VerticalAlignment="Top" PreviewMouseLeftButtonDown="Rectangle_PreviewMouseLeftButtonDown"></Rectangle>
+            <Path x:Name="logopath" HorizontalAlignment="Left" PreviewMouseLeftButtonDown="Rectangle_PreviewMouseLeftButtonDown" VerticalAlignment="Center" Data="F1M43,9.601C43,9.601 43,18.134 43,18.134 43,18.134 32.657,22.949 32.657,22.949 32.657,22.949 32.657,33.239 32.657,33.239 32.657,33.239 43,28.829 43,28.829 43,28.829 43,36.606 43,36.606 43,36.606 25.27,45 25.27,45 25.27,45 25.27,17.068 25.27,17.068 25.27,17.068 43,9.601 43,9.601z M2,9.266C2,9.266 19.729,17.068 19.729,17.068 19.729,17.068 19.729,25.154 19.729,25.154 19.729,25.154 9.018,20.376 9.018,20.376 9.018,20.376 9.018,33.239 9.018,33.239 9.018,33.239 14.189,35.444 14.189,35.444 14.189,35.444 14.189,32.872 14.189,32.872 14.189,32.872 12.342,31.769 12.342,31.769 12.342,31.769 12.342,24.786 12.342,24.786 12.342,24.786 19.729,28.094 19.729,28.094 19.729,28.094 19.729,45 19.729,45 19.729,45 2,37.057 2,37.057 2,37.057 2,9.266 2,9.266z M30.787,2C30.787,2 42.127,5.644 42.127,5.644 42.127,5.644 22.515,13.391 22.515,13.391 22.515,13.391 3.277,5.091 3.277,5.091 3.277,5.091 12.211,2.259 12.211,2.259 12.211,2.259 23.044,6.468 23.044,6.468 23.044,6.468 26.281,5.427 26.281,5.427 26.281,5.427 23.109,4.43 23.109,4.43 23.109,4.43 30.787,2 30.787,2z" Fill="#FFFF4D00" Height="46" Canvas.Left="37" Canvas.Top="23" Width="44" Margin="25,0,0,0"/>
+            <TextBlock x:Name="logotxt" VerticalAlignment="Center" PreviewMouseLeftButtonDown="Rectangle_PreviewMouseLeftButtonDown"  Margin="5,0,0,0" Grid.Column="1" Foreground="#FFFFFFFF" FontSize="25" FontFamily="Microsoft YaHei" IsHyphenationEnabled="True" Canvas.Left="90.789" TextAlignment="Left" TextWrapping="Wrap" Text="更新" Canvas.Top="26.241">
+
+            </TextBlock>
+            <Button  Cursor="Hand"  Background="Transparent"  Style="{StaticResource buttonClose}"  Grid.Column="2"  HorizontalAlignment="Right" Margin="0,0,7,0" Click="Button_Click">
+                <Path x:Name="Error_2"  Data="F1M11.95,1.014C11.95,1.014 8.051,4.972 8.051,4.972 8.051,4.972 4.027,1.045 4.027,1.045 4.027,1.045 1.931,2.954 1.931,2.954 1.931,2.954 6.045,6.946 6.045,6.946 6.045,6.946 1.962,10.97 1.962,10.97 1.962,10.97 3.964,13.066 3.964,13.066 3.964,13.066 7.895,9.077 7.895,9.077 7.895,9.077 12.012,13.004 12.012,13.004 12.012,13.004 14.046,11.001 14.046,11.001 14.046,11.001 9.994,7.04 9.994,7.04 9.994,7.04 14.015,2.953 14.015,2.953 14.015,2.953 11.95,1.014 11.95,1.014z" Fill="#FFFFFFFF" Height="15"  Width="16"/>
+            </Button>
+        </Grid>
+        <!--2-->
+        <TextBlock  HorizontalAlignment="Left" VerticalAlignment="Center"   Grid.Row="1" Margin="60,5,0,0"  Foreground="#FF000000" FontFamily="Microsoft YaHei" IsHyphenationEnabled="True" Canvas.Left="75" TextAlignment="Left" TextWrapping="Wrap" Canvas.Top="111"><Run FontWeight="Bold" FontSize="16" Text="多媒体课件编辑器有新的版本！&#xa;"/><Run FontSize="14" Text="多媒体课件编辑器2.0是可用版本，您想要现在就下载吗？"/></TextBlock>
+        <!--<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"  Foreground="#FF000000" FontWeight="Bold" FontSize="14" FontFamily="Microsoft YaHei" IsHyphenationEnabled="True" Canvas.Left="76" TextAlignment="Left" TextWrapping="Wrap" Text="新版本特性：" Canvas.Top="173"/>-->
+        
+        <!--3 &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;2、您觉得本产那些功能需要完善?&#xa;&#xa;&#xa;3、您对本产品那些操作不满意？&#xa;&#xa;&#xa;4、您的意见和建议-->
+        <StackPanel  Margin="60,0,60,0" Grid.Row="2">
+            <TextBlock  Margin="0,0,0,5"  Foreground="#FF000000" FontWeight="Bold" FontSize="14" FontFamily="Microsoft YaHei" IsHyphenationEnabled="True"  TextAlignment="Left" TextWrapping="Wrap" Text="新版本特性："/>
+            <TextBox Height="235" BorderThickness="1" x:Name="txtContent" BorderBrush="#ffc4c4c4"  Padding="5" TextWrapping="Wrap"></TextBox>
+        </StackPanel>
+
+        <!--4-->
+   
+        <!--5-->
+     
+        <!--6-->
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center">
+        <Button  Content="更新" Style="{StaticResource ButtonStyleNew}"    Width="120" Height="30" FontSize="18" Margin="0,0,5,30" Foreground="White" Click="Button_Click_Update"></Button>
+        <Button  Content="以后再说" Style="{StaticResource ButtonStyleNew}"   Width="120" Height="30" FontSize="18" Margin="5,0,0,30" Foreground="White" Click="Button_Click_IsUpdate"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

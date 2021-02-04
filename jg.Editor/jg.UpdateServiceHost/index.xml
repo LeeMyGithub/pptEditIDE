@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<List>
+  <Folder path="aaa"/>
+  <Folder path="bbb"/>
+  <Folder path="ccc"/>
+  <File path="CHS_MSDE2000A.exe"/>
+  <File path="eee\5.txt"/>
+  <File path="fff\6.txt"/>
+  <Folder path="ggg\7.txt"/>
+  <File path="%HOMEDRIVE%\8.txt"/>
+  <File path="%SystemRoot%\9.txt"/>
+</List>

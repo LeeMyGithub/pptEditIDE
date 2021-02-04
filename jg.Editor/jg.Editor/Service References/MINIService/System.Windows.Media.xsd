@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.Windows.Media" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Windows.Media" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/System.Windows.Media.Animation" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="SolidColorBrush">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Brush">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Color" type="tns:Color" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SolidColorBrush" nillable="true" type="tns:SolidColorBrush" />
+  <xs:complexType name="Brush">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Windows.Media.Animation" base="q1:Animatable">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Opacity" type="xs:double" />
+          <xs:element minOccurs="0" name="RelativeTransform" nillable="true" type="tns:Transform" />
+          <xs:element minOccurs="0" name="Transform" nillable="true" type="tns:Transform" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Brush" nillable="true" type="tns:Brush" />
+  <xs:complexType name="Transform">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GeneralTransform">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Transform" nillable="true" type="tns:Transform" />
+  <xs:complexType name="GeneralTransform">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Windows.Media.Animation" base="q2:Animatable">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralTransform" nillable="true" type="tns:GeneralTransform" />
+  <xs:complexType name="Color">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="A" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="B" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="G" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="R" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="ScA" type="xs:float" />
+      <xs:element minOccurs="0" name="ScB" type="xs:float" />
+      <xs:element minOccurs="0" name="ScG" type="xs:float" />
+      <xs:element minOccurs="0" name="ScR" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Color" nillable="true" type="tns:Color" />
+</xs:schema>

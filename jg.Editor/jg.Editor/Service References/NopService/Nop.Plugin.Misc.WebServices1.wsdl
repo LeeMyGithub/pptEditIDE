@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Nop.Plugin.Misc.WebServices" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Nop.Plugin.Misc.WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Nop.Plugin.Misc.WebServices/Imports">
+      <xsd:import namespace="Nop.Plugin.Misc.WebServices" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Nop.Plugin.Misc.WebServices" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INopService_GetPaymentMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentMethod" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetPaymentMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_ExecuteDataSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteDataSet" />
+  </wsdl:message>
+  <wsdl:message name="INopService_ExecuteDataSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_ExecuteNonQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQuery" />
+  </wsdl:message>
+  <wsdl:message name="INopService_ExecuteNonQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_ExecuteScalar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteScalar" />
+  </wsdl:message>
+  <wsdl:message name="INopService_ExecuteScalar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteScalarResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_DeleteOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrders" />
+  </wsdl:message>
+  <wsdl:message name="INopService_DeleteOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AddOrderNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrderNote" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AddOrderNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrderNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpdateOrderBillingInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderBillingInfo" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpdateOrderBillingInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderBillingInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpdateOrderShippingInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderShippingInfo" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpdateOrderShippingInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderShippingInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrderPaymentPaid_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderPaymentPaid" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrderPaymentPaid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderPaymentPaidResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrderPaymentPaidWithMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderPaymentPaidWithMethod" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrderPaymentPaidWithMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderPaymentPaidWithMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrderPaymentPending_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderPaymentPending" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrderPaymentPending_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderPaymentPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrderPaymentRefund_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderPaymentRefund" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrderPaymentRefund_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderPaymentRefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrdersStatusCanceled_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrdersStatusCanceled" />
+  </wsdl:message>
+  <wsdl:message name="INopService_SetOrdersStatusCanceled_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrdersStatusCanceledResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_InsertPicture_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPicture" />
+  </wsdl:message>
+  <wsdl:message name="INopService_InsertPicture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPictureResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_InsertAuditing_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAuditing" />
+  </wsdl:message>
+  <wsdl:message name="INopService_InsertAuditing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAuditingResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_InsertAuditingPicutre_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAuditingPicutre" />
+  </wsdl:message>
+  <wsdl:message name="INopService_InsertAuditingPicutre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAuditingPicutreResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUrl" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_Connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connect" />
+  </wsdl:message>
+  <wsdl:message name="INopService_Connect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="INopService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="INopService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpLoadProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpLoadProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpLoadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFile" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpLoadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpLoadFileResource_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFileResource" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpLoadFileResource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFileResourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategory" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetAuditInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuditInfo" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetAuditInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuditInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetOrdersByUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByUser" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetOrdersByUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetPictureByOrderId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPictureByOrderId" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetPictureByOrderId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPictureByOrderIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetPictureByChatperId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPictureByChatperId" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetPictureByChatperId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPictureByChatperIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetUrlInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUrlInfo" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetUrlInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUrlInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetDownUrlByChapterId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDownUrlByChapterId" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetDownUrlByChapterId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDownUrlByChapterIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetOrderByGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderByGuid" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetOrderByGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderByGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetOrderById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderById" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetOrderById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetProductInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductInfoList" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetProductInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetALiYunKeyId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetALiYunKeyId" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetALiYunKeyId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetALiYunKeyIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetALiYunKeySecret_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetALiYunKeySecret" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetALiYunKeySecret_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetALiYunKeySecretResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetBucketName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBucketName" />
+  </wsdl:message>
+  <wsdl:message name="INopService_GetBucketName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBucketNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpLoadProductChapterInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadProductChapterInfo" />
+  </wsdl:message>
+  <wsdl:message name="INopService_UpLoadProductChapterInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadProductChapterInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductFire_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductFire" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductFire_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductFireResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductNew" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductHome_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductHome" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductHome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductHomeResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_Test_InputMessage">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="INopService_Test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetCategory" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductByCateforyId_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductByCateforyId" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductByCateforyId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductByCateforyIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppLogin" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppRegister" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppChangePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppChangePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppSearchProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppSearchProduct" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppSearchProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppSearchProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductInfoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductInfoById" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetProductInfoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetProductInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetDownUrlByChapterId_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetDownUrlByChapterId" />
+  </wsdl:message>
+  <wsdl:message name="INopService_AppGetDownUrlByChapterId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppGetDownUrlByChapterIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="INopService">
+    <wsdl:operation name="GetPaymentMethod">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetPaymentMethod" message="tns:INopService_GetPaymentMethod_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetPaymentMethodResponse" message="tns:INopService_GetPaymentMethod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataSet">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/ExecuteDataSet" message="tns:INopService_ExecuteDataSet_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/ExecuteDataSetResponse" message="tns:INopService_ExecuteDataSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/ExecuteNonQuery" message="tns:INopService_ExecuteNonQuery_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/ExecuteNonQueryResponse" message="tns:INopService_ExecuteNonQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/ExecuteScalar" message="tns:INopService_ExecuteScalar_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/ExecuteScalarResponse" message="tns:INopService_ExecuteScalar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrders">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/DeleteOrders" message="tns:INopService_DeleteOrders_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/DeleteOrdersResponse" message="tns:INopService_DeleteOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderNote">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AddOrderNote" message="tns:INopService_AddOrderNote_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AddOrderNoteResponse" message="tns:INopService_AddOrderNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderBillingInfo">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpdateOrderBillingInfo" message="tns:INopService_UpdateOrderBillingInfo_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpdateOrderBillingInfoResponse" message="tns:INopService_UpdateOrderBillingInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderShippingInfo">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpdateOrderShippingInfo" message="tns:INopService_UpdateOrderShippingInfo_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpdateOrderShippingInfoResponse" message="tns:INopService_UpdateOrderShippingInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderPaymentPaid">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrderPaymentPaid" message="tns:INopService_SetOrderPaymentPaid_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrderPaymentPaidResponse" message="tns:INopService_SetOrderPaymentPaid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderPaymentPaidWithMethod">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrderPaymentPaidWithMethod" message="tns:INopService_SetOrderPaymentPaidWithMethod_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrderPaymentPaidWithMethodResponse" message="tns:INopService_SetOrderPaymentPaidWithMethod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderPaymentPending">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrderPaymentPending" message="tns:INopService_SetOrderPaymentPending_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrderPaymentPendingResponse" message="tns:INopService_SetOrderPaymentPending_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderPaymentRefund">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrderPaymentRefund" message="tns:INopService_SetOrderPaymentRefund_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrderPaymentRefundResponse" message="tns:INopService_SetOrderPaymentRefund_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOrdersStatusCanceled">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrdersStatusCanceled" message="tns:INopService_SetOrdersStatusCanceled_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/SetOrdersStatusCanceledResponse" message="tns:INopService_SetOrdersStatusCanceled_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPicture">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/InsertPicture" message="tns:INopService_InsertPicture_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/InsertPictureResponse" message="tns:INopService_InsertPicture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAuditing">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/InsertAuditing" message="tns:INopService_InsertAuditing_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/InsertAuditingResponse" message="tns:INopService_InsertAuditing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAuditingPicutre">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/InsertAuditingPicutre" message="tns:INopService_InsertAuditingPicutre_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/InsertAuditingPicutreResponse" message="tns:INopService_InsertAuditingPicutre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUrl">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetUrl" message="tns:INopService_GetUrl_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetUrlResponse" message="tns:INopService_GetUrl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Connect">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/Connect" message="tns:INopService_Connect_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/ConnectResponse" message="tns:INopService_Connect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/Login" message="tns:INopService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/LoginResponse" message="tns:INopService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/Register" message="tns:INopService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/RegisterResponse" message="tns:INopService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadProductInfo">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpLoadProductInfo" message="tns:INopService_UpLoadProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpLoadProductInfoResponse" message="tns:INopService_UpLoadProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFile">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpLoadFile" message="tns:INopService_UpLoadFile_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpLoadFileResponse" message="tns:INopService_UpLoadFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFileResource">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpLoadFileResource" message="tns:INopService_UpLoadFileResource_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpLoadFileResourceResponse" message="tns:INopService_UpLoadFileResource_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategory">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetCategory" message="tns:INopService_GetCategory_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetCategoryResponse" message="tns:INopService_GetCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditInfo">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetAuditInfo" message="tns:INopService_GetAuditInfo_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetAuditInfoResponse" message="tns:INopService_GetAuditInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByUser">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetOrdersByUser" message="tns:INopService_GetOrdersByUser_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetOrdersByUserResponse" message="tns:INopService_GetOrdersByUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPictureByOrderId">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetPictureByOrderId" message="tns:INopService_GetPictureByOrderId_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetPictureByOrderIdResponse" message="tns:INopService_GetPictureByOrderId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPictureByChatperId">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetPictureByChatperId" message="tns:INopService_GetPictureByChatperId_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetPictureByChatperIdResponse" message="tns:INopService_GetPictureByChatperId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUrlInfo">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetUrlInfo" message="tns:INopService_GetUrlInfo_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetUrlInfoResponse" message="tns:INopService_GetUrlInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDownUrlByChapterId">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetDownUrlByChapterId" message="tns:INopService_GetDownUrlByChapterId_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetDownUrlByChapterIdResponse" message="tns:INopService_GetDownUrlByChapterId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderByGuid">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetOrderByGuid" message="tns:INopService_GetOrderByGuid_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetOrderByGuidResponse" message="tns:INopService_GetOrderByGuid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderById">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetOrderById" message="tns:INopService_GetOrderById_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetOrderByIdResponse" message="tns:INopService_GetOrderById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductInfoList">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetProductInfoList" message="tns:INopService_GetProductInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetProductInfoListResponse" message="tns:INopService_GetProductInfoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetALiYunKeyId">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetALiYunKeyId" message="tns:INopService_GetALiYunKeyId_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetALiYunKeyIdResponse" message="tns:INopService_GetALiYunKeyId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetALiYunKeySecret">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetALiYunKeySecret" message="tns:INopService_GetALiYunKeySecret_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetALiYunKeySecretResponse" message="tns:INopService_GetALiYunKeySecret_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBucketName">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetBucketName" message="tns:INopService_GetBucketName_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/GetBucketNameResponse" message="tns:INopService_GetBucketName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadProductChapterInfo">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpLoadProductChapterInfo" message="tns:INopService_UpLoadProductChapterInfo_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/UpLoadProductChapterInfoResponse" message="tns:INopService_UpLoadProductChapterInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppGetProductFire">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductFire" message="tns:INopService_AppGetProductFire_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductFireResponse" message="tns:INopService_AppGetProductFire_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppGetProductNew">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductNew" message="tns:INopService_AppGetProductNew_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductNewResponse" message="tns:INopService_AppGetProductNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppGetProductHome">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductHome" message="tns:INopService_AppGetProductHome_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductHomeResponse" message="tns:INopService_AppGetProductHome_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/Test" message="tns:INopService_Test_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/TestResponse" message="tns:INopService_Test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppGetCategory">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetCategory" message="tns:INopService_AppGetCategory_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetCategoryResponse" message="tns:INopService_AppGetCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppGetProductByCateforyId">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductByCateforyId" message="tns:INopService_AppGetProductByCateforyId_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductByCateforyIdResponse" message="tns:INopService_AppGetProductByCateforyId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppLogin">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppLogin" message="tns:INopService_AppLogin_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppLoginResponse" message="tns:INopService_AppLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppRegister">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppRegister" message="tns:INopService_AppRegister_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppRegisterResponse" message="tns:INopService_AppRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppChangePassword">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppChangePassword" message="tns:INopService_AppChangePassword_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppChangePasswordResponse" message="tns:INopService_AppChangePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppSearchProduct">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppSearchProduct" message="tns:INopService_AppSearchProduct_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppSearchProductResponse" message="tns:INopService_AppSearchProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppGetProductInfoById">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductInfoById" message="tns:INopService_AppGetProductInfoById_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetProductInfoByIdResponse" message="tns:INopService_AppGetProductInfoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppGetDownUrlByChapterId">
+      <wsdl:input wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetDownUrlByChapterId" message="tns:INopService_AppGetDownUrlByChapterId_InputMessage" />
+      <wsdl:output wsaw:Action="Nop.Plugin.Misc.WebServices/INopService/AppGetDownUrlByChapterIdResponse" message="tns:INopService_AppGetDownUrlByChapterId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

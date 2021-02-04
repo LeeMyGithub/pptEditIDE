@@ -1,0 +1,105 @@
+﻿1>------ 已启动生成:  项目: jg.Editor.Library, 配置: Debug Any CPU ------
+1>  COM 引用“ShockwaveFlashObjects”是 ActiveX 控件“AxShockwaveFlashObjects”的互操作程序集，但含有 /link 标志的编译器已将其标为已链接。系统会将此 COM 引用视为引用，并且不会链接该引用。
+1>  COM 引用“UnityWebPlayerAXLib”是 ActiveX 控件“AxUnityWebPlayerAXLib”的互操作程序集，但含有 /link 标志的编译器已将其标为已链接。系统会将此 COM 引用视为引用，并且不会链接该引用。
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\shapeRect.xaml.cs(50,23,50,38): warning CS0108: “jg.Editor.Library.shapeRect.BorderThickness”隐藏了继承的成员“System.Windows.Controls.Control.BorderThickness”。如果是有意隐藏，请使用关键字 new。
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyStage.xaml.cs(30,23,30,29): warning CS0108: “jg.Editor.Library.Property.ControlPropertyStage.Height”隐藏了继承的成员“System.Windows.FrameworkElement.Height”。如果是有意隐藏，请使用关键字 new。
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyStage.xaml.cs(31,23,31,28): warning CS0108: “jg.Editor.Library.Property.ControlPropertyStage.Width”隐藏了继承的成员“System.Windows.FrameworkElement.Width”。如果是有意隐藏，请使用关键字 new。
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(410,30,410,32): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(505,30,505,32): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(807,24,807,32): warning CS0168: 声明了变量“TempPath”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(811,23,811,28): warning CS0219: 变量“image”已赋值，但其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\FileSecurity.cs(463,33,463,35): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\FileSecurity.cs(474,30,474,32): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\GZip.cs(242,33,242,35): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\GZip.cs(356,30,356,33): warning CS0168: 声明了变量“ex3”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ShowTopic.xaml.cs(269,33,269,48): warning CS0168: 声明了变量“topicOptionInfo”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Common.cs(247,32,247,55): warning CS0219: 变量“thicknessAnimationPanel”已赋值，但其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\FilePackage.cs(172,34,172,36): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\FilePackage.cs(300,42,300,44): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(78,31,78,32): warning CS0219: 变量“p”已赋值，但其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ToolboxItem.cs(639,34,639,36): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ToolboxItem.cs(895,34,895,36): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ToolboxItem.cs(1006,34,1006,36): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ComboTree\TreeModel.cs(53,50,53,65): warning CS0067: 从不使用事件“jg.Editor.Library.Control.ComboTree.TreeModel.PropertyChanged”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlSound.xaml.cs(25,14,25,20): warning CS0414: 字段“jg.Editor.Library.Control.ControlSound.IsPush”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(24,24,24,31): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._height”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(24,37,24,43): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._width”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(24,49,24,54): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._left”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(24,60,24,64): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._top”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(25,13,25,20): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._zindex”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(26,14,26,20): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement.IsZoom”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(34,22,34,28): warning CS0414: 字段“jg.Editor.Library.DesignerCanvas.IsText”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyTPage.xaml.cs(30,40,30,63): warning CS0067: 从不使用事件“jg.Editor.Library.Property.ControlPropertyTPage.UpdatePageChangedHander”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlPlay.xaml.cs(31,33,31,45): warning CS0067: 从不使用事件“jg.Editor.Library.Control.ControlPlay.EventHandler”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlPlay.xaml.cs(61,24,61,32): warning CS0414: 字段“jg.Editor.Library.Control.ControlPlay._minimum”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlTimeLine.xaml.cs(46,33,46,45): warning CS0067: 从不使用事件“jg.Editor.Library.ControlTimeLine.EventHandler”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerItem.cs(53,24,53,35): warning CS0169: 从不使用字段“jg.Editor.Library.DesignerItem._LineHeight”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerItem.cs(217,22,217,31): warning CS0169: 从不使用字段“jg.Editor.Library.DesignerItem.isShowDiv”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerItem.cs(234,59,234,75): warning CS0169: 从不使用字段“jg.Editor.Library.DesignerItem._controlLineType”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyFont.xaml.cs(450,22,450,33): warning CS0169: 从不使用字段“jg.Editor.Library.Property.ControlPropertyFont._IsLongText”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyLocation.xaml.cs(29,49,29,59): warning CS0649: 从未对字段“jg.Editor.Library.Property.ControlPropertyLocation.oldOpacity”赋值，字段将一直保持其默认值 0
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyLocation.xaml.cs(296,22,296,32): warning CS0169: 从不使用字段“jg.Editor.Library.Property.ControlPropertyLocation._IsShowDiv”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyLocation.xaml.cs(325,22,325,31): warning CS0169: 从不使用字段“jg.Editor.Library.Property.ControlPropertyLocation._IsDescPt”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(18,24,18,36): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.initialAngle”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(19,33,19,48): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.rotateTransform”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(20,24,20,35): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.startVector”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(21,23,21,34): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.centerPoint”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(22,32,22,44): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.designerItem”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(23,24,23,30): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.canvas”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ToolboxItem.cs(29,43,29,52): warning CS0067: 从不使用事件“jg.Editor.Library.ToolboxItem.showAsset”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\TreeViewControl.cs(26,14,26,29): warning CS0414: 字段“jg.Editor.Library.TreeViewControl.MouseButtonDown”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\TreeViewControl.cs(29,22,29,35): warning CS0414: 字段“jg.Editor.Library.TreeViewControl.mAdornerLayer”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\TreeViewControl.cs(30,25,30,32): warning CS0414: 字段“jg.Editor.Library.TreeViewControl.adorner”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\TreeViewControl.cs(390,34,390,48): warning CS0169: 从不使用字段“jg.Editor.Library.TreeViewItemInfo._ClassInfoBind”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\shapeRect.xaml.cs(50,23,50,38): warning CS0108: “jg.Editor.Library.shapeRect.BorderThickness”隐藏了继承的成员“System.Windows.Controls.Control.BorderThickness”。如果是有意隐藏，请使用关键字 new。
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyStage.xaml.cs(30,23,30,29): warning CS0108: “jg.Editor.Library.Property.ControlPropertyStage.Height”隐藏了继承的成员“System.Windows.FrameworkElement.Height”。如果是有意隐藏，请使用关键字 new。
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyStage.xaml.cs(31,23,31,28): warning CS0108: “jg.Editor.Library.Property.ControlPropertyStage.Width”隐藏了继承的成员“System.Windows.FrameworkElement.Width”。如果是有意隐藏，请使用关键字 new。
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(410,30,410,32): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(505,30,505,32): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(807,24,807,32): warning CS0168: 声明了变量“TempPath”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(811,23,811,28): warning CS0219: 变量“image”已赋值，但其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\FileSecurity.cs(463,33,463,35): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\FileSecurity.cs(474,30,474,32): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\GZip.cs(242,33,242,35): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\GZip.cs(356,30,356,33): warning CS0168: 声明了变量“ex3”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ShowTopic.xaml.cs(269,33,269,48): warning CS0168: 声明了变量“topicOptionInfo”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Common.cs(247,32,247,55): warning CS0219: 变量“thicknessAnimationPanel”已赋值，但其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\FilePackage.cs(172,34,172,36): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\FilePackage.cs(300,42,300,44): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(78,31,78,32): warning CS0219: 变量“p”已赋值，但其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ToolboxItem.cs(639,34,639,36): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ToolboxItem.cs(895,34,895,36): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ToolboxItem.cs(1006,34,1006,36): warning CS0168: 声明了变量“ex”，但从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ComboTree\TreeModel.cs(53,50,53,65): warning CS0067: 从不使用事件“jg.Editor.Library.Control.ComboTree.TreeModel.PropertyChanged”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlSound.xaml.cs(25,14,25,20): warning CS0414: 字段“jg.Editor.Library.Control.ControlSound.IsPush”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(24,24,24,31): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._height”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(24,37,24,43): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._width”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(24,49,24,54): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._left”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(24,60,24,64): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._top”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(25,13,25,20): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement._zindex”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlMediaElement.xaml.cs(26,14,26,20): warning CS0414: 字段“jg.Editor.Library.Control.ControlMediaElement.IsZoom”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerCanvas.cs(34,22,34,28): warning CS0414: 字段“jg.Editor.Library.DesignerCanvas.IsText”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyTPage.xaml.cs(30,40,30,63): warning CS0067: 从不使用事件“jg.Editor.Library.Property.ControlPropertyTPage.UpdatePageChangedHander”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlPlay.xaml.cs(31,33,31,45): warning CS0067: 从不使用事件“jg.Editor.Library.Control.ControlPlay.EventHandler”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlPlay.xaml.cs(61,24,61,32): warning CS0414: 字段“jg.Editor.Library.Control.ControlPlay._minimum”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Control\ControlTimeLine.xaml.cs(46,33,46,45): warning CS0067: 从不使用事件“jg.Editor.Library.ControlTimeLine.EventHandler”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerItem.cs(53,24,53,35): warning CS0169: 从不使用字段“jg.Editor.Library.DesignerItem._LineHeight”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerItem.cs(217,22,217,31): warning CS0169: 从不使用字段“jg.Editor.Library.DesignerItem.isShowDiv”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\DesignerItem.cs(234,59,234,75): warning CS0169: 从不使用字段“jg.Editor.Library.DesignerItem._controlLineType”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyFont.xaml.cs(450,22,450,33): warning CS0169: 从不使用字段“jg.Editor.Library.Property.ControlPropertyFont._IsLongText”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyLocation.xaml.cs(29,49,29,59): warning CS0649: 从未对字段“jg.Editor.Library.Property.ControlPropertyLocation.oldOpacity”赋值，字段将一直保持其默认值 0
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyLocation.xaml.cs(296,22,296,32): warning CS0169: 从不使用字段“jg.Editor.Library.Property.ControlPropertyLocation._IsShowDiv”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\Property\ControlPropertyLocation.xaml.cs(325,22,325,31): warning CS0169: 从不使用字段“jg.Editor.Library.Property.ControlPropertyLocation._IsDescPt”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(18,24,18,36): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.initialAngle”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(19,33,19,48): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.rotateTransform”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(20,24,20,35): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.startVector”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(21,23,21,34): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.centerPoint”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(22,32,22,44): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.designerItem”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ResizeThumb.cs(23,24,23,30): warning CS0169: 从不使用字段“jg.Editor.Library.ResizeThumb.canvas”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\ToolboxItem.cs(29,43,29,52): warning CS0067: 从不使用事件“jg.Editor.Library.ToolboxItem.showAsset”
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\TreeViewControl.cs(26,14,26,29): warning CS0414: 字段“jg.Editor.Library.TreeViewControl.MouseButtonDown”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\TreeViewControl.cs(29,22,29,35): warning CS0414: 字段“jg.Editor.Library.TreeViewControl.mAdornerLayer”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\TreeViewControl.cs(30,25,30,32): warning CS0414: 字段“jg.Editor.Library.TreeViewControl.adorner”已赋值，但是其值从未使用过
+1>E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\TreeViewControl.cs(390,34,390,48): warning CS0169: 从不使用字段“jg.Editor.Library.TreeViewItemInfo._ClassInfoBind”
+1>  jg.Editor.Library -> E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.Editor.Library\bin\Debug\jg.Editor.Library.dll
+========== 生成:  成功 1 个，失败 0 个，最新 2 个，跳过 0 个 ==========

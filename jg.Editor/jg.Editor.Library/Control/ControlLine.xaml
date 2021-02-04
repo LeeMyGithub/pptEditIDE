@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="jg.Editor.Library.Control.ControlLine"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Loaded="UserControl_Loaded"
+             SizeChanged="UserControl_SizeChanged">
+
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="solidcolor"  Color="Black">
+        </SolidColorBrush>
+
+
+        
+        <!--<Brush ></Brush>-->
+    </UserControl.Resources>
+   
+    <Grid  >
+        <Path Stretch="Fill"  x:Name="HeaderArrow"
+                  Stroke="{DynamicResource solidcolor}" 
+                  StrokeThickness="2" 
+                  Width="10" 
+                  HorizontalAlignment="Left">
+            <Path.Data>
+                <GeometryGroup>
+                    <LineGeometry StartPoint="0,2" EndPoint="2,0"/>
+                    <LineGeometry StartPoint="0,2" EndPoint="2,4"/>
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+        <Line X1="0" Y1="0" X2="100" Y2="0"   x:Name="lineName" Stretch="Fill"  Stroke="{DynamicResource solidcolor}" StrokeThickness="2"/>
+        <Path Stretch="Fill"  x:Name="EndArrow"
+                  Stroke="{DynamicResource solidcolor}"
+                  StrokeThickness="2"
+                  Width="10"
+                  HorizontalAlignment="Right">
+            <Path.Data>
+                <GeometryGroup>
+                    <LineGeometry StartPoint="0,2" EndPoint="6,0"/>
+                    <LineGeometry StartPoint="0,2" EndPoint="6,4"/>
+                </GeometryGroup>
+            </Path.Data>
+            <Path.LayoutTransform>
+                <RotateTransform Angle="180"/>
+            </Path.LayoutTransform>
+        </Path>
+    </Grid>
+</UserControl>

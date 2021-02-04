@@ -1,0 +1,56 @@
+﻿<Window x:Class="jg.Editor.test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       WindowStartupLocation="CenterScreen"  Loaded="Window_Loaded"
+        Title="Window1"  AllowsTransparency="True" Background="Transparent" WindowStyle="None"  >
+    <Grid x:Name="ProgressEditBusyName"  Height="345"   Width="589" Background="#FF2D333F">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="auto"/>
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Margin="20" Grid.Row="0" x:Name="LoadTxt" Foreground="#FFFFFFFF" FontSize="15" FontFamily="Microsoft YaHei" IsHyphenationEnabled="True" TextAlignment="Left" TextWrapping="Wrap" Text="加载中···">
+
+        </TextBlock>
+
+
+        <Grid Grid.Row="1"  x:Name="grid"  HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Path x:Name="effectGrid"    Data="F1M131,26.04C131,26.04 131,53.029 131,53.029 131,53.029 99,68 99,68 99,68 99,100 99,100 99,100 131,86.855 131,86.855 131,86.855 131,114 131,114 131,114 75,138 75,138 75,138 75,50 75,50 75,50 131,26.04 131,26.04z M2,24.982C2,24.982 58,50 58,50 58,50 58,75 58,75 58,75 24.081,60.12 24.081,60.12 24.081,60.12 24.081,100.803 24.081,100.803 24.081,100.803 40.351,107.778 40.351,107.778 40.351,107.778 40.351,99.641 40.351,99.641 40.351,99.641 35,96 35,96 35,96 35,74 35,74 35,74 58,85 58,85 58,85 58,138 58,138 58,138 2,112.879 2,112.879 2,112.879 2,24.982 2,24.982z M92.574,2C92.574,2 128.255,13.526 128.255,13.526 128.255,13.526 66.549,38.028 66.549,38.028 66.549,38.028 6.018,11.776 6.018,11.776 6.018,11.776 34.129,2.819 34.129,2.819 34.129,2.819 68.214,16.133 68.214,16.133 68.214,16.133 78.398,12.839 78.398,12.839 78.398,12.839 68.417,9.687 68.417,9.687 68.417,9.687 92.574,2 92.574,2z" Fill="#FFFF4D00" Height="134.697"  Width="127.914"   Stretch="Fill"/>
+            <Rectangle x:Name="Virect"   Grid.Row="1"   Margin="0,-19,0,0"    Height="112.333"  Width="127.827" >
+
+                <Rectangle.Fill>
+                    <VisualBrush>
+                        <VisualBrush.Visual>
+                            <Path Data="F1M131,3.04C131,3.04 131,30.029 131,30.029 131,30.029 99,45 99,45 99,45 99,77 99,77 99,77 131,63.855 131,63.855 131,63.855 131,88.452 131,88.452 131,88.452 75,115 75,115 75,115 75,27 75,27 75,27 131,3.04 131,3.04z M2,1.982C2,1.982 58,27 58,27 58,27 58,82 58,82 58,82 33,70 33,70 33,70 33,54 33,54 33,54 40,57.6 40,57.6 40,57.6 40,42 40,42 40,42 24.081,34.12 24.081,34.12 24.081,34.12 24.081,77.803 24.081,77.803 24.081,77.803 58,93 58,93 58,93 58,115 58,115 58,115 2,89.879 2,89.879 2,89.879 2,1.982 2,1.982z"
+				Fill="#FFFF4D00"   />
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Rectangle.Fill>
+                <Rectangle.OpacityMask>
+                    <!--反射的透明效果-->
+                    <LinearGradientBrush StartPoint="0,1"
+                                         EndPoint="0,0">
+                        <GradientStop Offset="0.3"
+                                      Color="Transparent" />
+                        <GradientStop Offset="1"
+                                      Color="#af000000" />
+                    </LinearGradientBrush>
+                </Rectangle.OpacityMask>
+            </Rectangle>
+
+            <Grid Grid.RowSpan="2"    >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Path   Opacity="0.4"  Data="F1M131,26.04C131,26.04 131,53.029 131,53.029 131,53.029 99,68 99,68 99,68 99,100 99,100 99,100 131,86.855 131,86.855 131,86.855 131,114 131,114 131,114 75,138 75,138 75,138 75,50 75,50 75,50 131,26.04 131,26.04z M2,24.982C2,24.982 58,50 58,50 58,50 58,75 58,75 58,75 24.081,60.12 24.081,60.12 24.081,60.12 24.081,100.803 24.081,100.803 24.081,100.803 40.351,107.778 40.351,107.778 40.351,107.778 40.351,99.641 40.351,99.641 40.351,99.641 35,96 35,96 35,96 35,74 35,74 35,74 58,85 58,85 58,85 58,138 58,138 58,138 2,112.879 2,112.879 2,112.879 2,24.982 2,24.982z M92.574,2C92.574,2 128.255,13.526 128.255,13.526 128.255,13.526 66.549,38.028 66.549,38.028 66.549,38.028 6.018,11.776 6.018,11.776 6.018,11.776 34.129,2.819 34.129,2.819 34.129,2.819 68.214,16.133 68.214,16.133 68.214,16.133 78.398,12.839 78.398,12.839 78.398,12.839 68.417,9.687 68.417,9.687 68.417,9.687 92.574,2 92.574,2z" Fill="#FFFF4D00" Height="134.697"  Width="127.914"   Stretch="Fill"/>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

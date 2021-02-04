@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.jingge.com/Mes" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.jingge.com/Mes" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.jingge.com/Mes/Imports">
+      <xsd:import namespace="http://www.jingge.com/Mes" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUpdate_GetVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersion" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetFilePack_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilePack" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetFilePack_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilePackResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetFileSize_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileSize" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetFileSize_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_HelloWorld_InputMessage">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_HelloWorld_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetUpadateContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpadateContent" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetUpadateContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpadateContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetIsForced_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIsForced" />
+  </wsdl:message>
+  <wsdl:message name="IUpdate_GetIsForced_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIsForcedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUpdate">
+    <wsdl:operation name="GetVersion">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetVersion" message="tns:IUpdate_GetVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetVersionResponse" message="tns:IUpdate_GetVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilePack">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetFilePack" message="tns:IUpdate_GetFilePack_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetFilePackResponse" message="tns:IUpdate_GetFilePack_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileSize">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetFileSize" message="tns:IUpdate_GetFileSize_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetFileSizeResponse" message="tns:IUpdate_GetFileSize_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUpdate/HelloWorld" message="tns:IUpdate_HelloWorld_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUpdate/HelloWorldResponse" message="tns:IUpdate_HelloWorld_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpadateContent">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetUpadateContent" message="tns:IUpdate_GetUpadateContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetUpadateContentResponse" message="tns:IUpdate_GetUpadateContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIsForced">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetIsForced" message="tns:IUpdate_GetIsForced_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUpdate/GetIsForcedResponse" message="tns:IUpdate_GetIsForced_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

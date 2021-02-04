@@ -1,0 +1,110 @@
+﻿<Window x:Class="jg.Editor.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  xmlns:src="clr-namespace:jg.Editor"    
+        xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"    xmlns:xceed="clr-namespace:Xceed.Wpf.Toolkit;assembly=WPFToolkit.Extended"
+        Title="Window1" Height="720" Width="1280"    Loaded="Window_Loaded"    WindowStartupLocation="CenterScreen" >
+    <Window.Resources></Window.Resources>
+    <Grid  HorizontalAlignment="Center" Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="37"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="201"/>
+                <RowDefinition Height="26"/>
+                <RowDefinition Height="39"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"/>
+                <ColumnDefinition Width="0"/>
+                <ColumnDefinition Width="301"/>
+                <ColumnDefinition Width="62"/>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition Width="55"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="83"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="2" Grid.Row="2">
+                <TextBlock Text="课件信息" FontFamily="Microsoft YaHei" FontSize="32" />
+            </Border>
+            <Border Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" >
+                <StackPanel Orientation="Horizontal">
+                <!--放置图标-->
+                    <Button Height="80" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Content="加密" Foreground="White" FontSize="18"></Button>
+                    <StackPanel Height="80"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+                        <TextBlock   HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="Black" FontWeight="Bold" FontSize="14" >加密</TextBlock>
+                        <TextBlock   HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="0,3,0,0" FontSize="15" >对您的课件做进一步的保护。</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="6">
+
+            </Border>
+            <Rectangle Grid.Column="4" Grid.RowSpan="8" Stretch="Fill"  Opacity="0.8">
+                <Rectangle.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF2D3340" Offset="0"  />
+                        <GradientStop Color="White" Offset="1"/>
+                    </RadialGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Grid Grid.Column="6" Grid.Row="4" Grid.RowSpan="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+              
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="FontSize" Value="14"/>
+                        <Setter Property="TextWrapping" Value="Wrap"/>
+                        <Setter Property="Padding" Value="0,0,0,35"/>
+
+                    </Style>
+                   
+                </Grid.Resources>
+                <TextBlock Text="名       称：" Grid.Row="0" FontFamily="Microsoft YaHei" />
+                <TextBlock Text="修改时间：" Grid.Row="1" FontFamily="Microsoft YaHei"/>
+                <TextBlock Text="创建时间：" Grid.Row="2" FontFamily="Microsoft YaHei"/>
+                <TextBlock Text="画布大小：" Grid.Row="3" FontFamily="Microsoft YaHei"/>
+                <TextBlock Text="背景颜色：" Grid.Row="4" FontFamily="Microsoft YaHei"/>
+                <TextBlock Text="修  改 者：" Grid.Row="5" FontFamily="Microsoft YaHei"/>
+                <TextBlock Text="创  建 者：" Grid.Row="6" FontFamily="Microsoft YaHei"/>
+
+       
+                <TextBlock Text="" Grid.Row="0" Grid.Column="1" FontFamily="Microsoft YaHei"/>
+                <TextBlock Text="" Grid.Row="1" Grid.Column="1" FontFamily="Microsoft YaHei"/>
+                <TextBlock Text="" Grid.Row="2" Grid.Column="1" FontFamily="Microsoft YaHei"/>
+
+                <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Label Padding="2.7" VerticalAlignment="Top"  Foreground="Gray" FontSize="12">宽度:</Label>
+                    <TextBox Text="1280" Width="40" VerticalAlignment="Top"  FontFamily="Microsoft YaHei" BorderThickness="0" VerticalContentAlignment="Center" FontSize="12" BorderBrush="White" Foreground="Gray"></TextBox>
+                    <Label Padding="2.7" VerticalAlignment="Top"  Foreground="Gray" FontSize="12">高度:</Label>
+                    <TextBox Text="720"  Width="40" VerticalAlignment="Top"  FontFamily="Microsoft YaHei" BorderThickness="0" VerticalContentAlignment="Center" FontSize="12" BorderBrush="White" Foreground="Gray"></TextBox>
+                </StackPanel>
+                <xceed:ColorPicker x:Name="colorPicker" Grid.Row="4" Grid.Column="1" Width="135" Height="30" VerticalAlignment="Top"/>
+              
+                <TextBlock Text="" Grid.Row="5" Grid.Column="1" FontFamily="Microsoft YaHei"/>
+                <TextBlock Text="" Grid.Row="6" Grid.Column="1" FontFamily="Microsoft YaHei"/>
+               
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>

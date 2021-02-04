@@ -1,0 +1,8 @@
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.UpdateHost.exe
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.UpdateHost.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.Update.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.Update.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\obj\x86\Debug\jg.UpdateHost.csprojResolveAssemblyReference.cache
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\obj\x86\Debug\jg.UpdateHost.exe
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\obj\x86\Debug\jg.UpdateHost.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.UpdateHost.exe.config

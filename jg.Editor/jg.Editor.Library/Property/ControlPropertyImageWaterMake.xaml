@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="jg.Editor.Library.Property.ControlPropertyImageWaterMake"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded"
+           >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Margin="23,0,23,0"  VerticalAlignment="Center" HorizontalAlignment="Left">水印：</TextBlock>
+        <ComboBox Grid.Column="1"  x:Name="CobImgGroup" >
+        </ComboBox>
+        <TextBlock Margin="23,0,23,0" VerticalAlignment="Center" Grid.Row="1" HorizontalAlignment="Left">位置：</TextBlock>
+
+        <ComboBox  Grid.Row="1" Grid.Column="1" x:Name="CobPoint">
+            <ComboBoxItem>左上角</ComboBoxItem>
+            <ComboBoxItem>右上角</ComboBoxItem>
+            <ComboBoxItem>顶端</ComboBoxItem>
+            <ComboBoxItem>居中</ComboBoxItem>
+            <ComboBoxItem>左下角</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">右下角</ComboBoxItem>
+            <ComboBoxItem>底端</ComboBoxItem>
+        </ComboBox>
+
+
+        <TextBlock Margin="23,0,23,0" VerticalAlignment="Center" Grid.Row="2" HorizontalAlignment="Left">透明度：</TextBlock>
+
+        <Slider Grid.Row="2" Grid.Column="1"   Minimum="0" Maximum="1" Value="1" LargeChange="0.1"     SmallChange="0.1" x:Name="SLIop"  ></Slider>
+    </Grid>
+</UserControl>

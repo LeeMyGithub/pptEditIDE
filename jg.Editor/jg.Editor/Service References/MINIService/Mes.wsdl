@@ -1,0 +1,1013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.jingge.com/Mes" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.jingge.com/Mes" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.jingge.com/Mes/Imports">
+      <xsd:import namespace="http://www.jingge.com/Mes" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/jg.Common" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Windows" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Service" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Windows.Media" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Windows.Media.Animation" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Windows.Threading" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMiniEditor_DeleteTReplyInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTReplyInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTReplyInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTReplyInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTReplyInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTReplyInfoList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTReplyInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTReplyInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTReplyInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTReplyInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTReplyInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTReplyInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTJudgeInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTJudgeInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTJudgeInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTJudgeInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTJudgeInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTJudgeInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTJudgeInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTJudgeInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTJudgeInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTJudgeInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTJudgeInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTJudgeInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTJudgeInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTJudgeInfoList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTJudgeInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTJudgeInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTJudgeInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTJudgeInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTJudgeInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTJudgeInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTStudentBBSInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTStudentBBSInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTStudentBBSInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTStudentBBSInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTStudentBBSInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTStudentBBSInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTStudentBBSInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTStudentBBSInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTStudentBBSInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTStudentBBSInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTStudentBBSInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTStudentBBSInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTStudentBBSInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTStudentBBSInfoList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTStudentBBSInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTStudentBBSInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTStudentBBSInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTStudentBBSInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTStudentBBSInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTStudentBBSInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTTeacherBBSInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTTeacherBBSInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTTeacherBBSInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTTeacherBBSInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTTeacherBBSInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTTeacherBBSInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTTeacherBBSInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTTeacherBBSInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTTeacherBBSInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTTeacherBBSInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTTeacherBBSInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTTeacherBBSInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTTeacherBBSInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTTeacherBBSInfoList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTTeacherBBSInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTTeacherBBSInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTTeacherBBSInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTTeacherBBSInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTTeacherBBSInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTTeacherBBSInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetAuthorityUIInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthorityUIInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetAuthorityUIInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthorityUIInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetLoginList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetLoginList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Loignsend_InputMessage">
+    <wsdl:part name="parameters" element="tns:Loignsend" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Leave_InputMessage">
+    <wsdl:part name="parameters" element="tns:Leave" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_HelloException_InputMessage">
+    <wsdl:part name="parameters" element="tns:HelloException" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_HelloException_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HelloExceptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_HelloFaultException_InputMessage">
+    <wsdl:part name="parameters" element="tns:HelloFaultException" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_HelloFaultException_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HelloFaultExceptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_HelloFaultExceptionGeneric_InputMessage">
+    <wsdl:part name="parameters" element="tns:HelloFaultExceptionGeneric" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_HelloFaultExceptionGeneric_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HelloFaultExceptionGenericResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_HelloIErrorHandler_InputMessage">
+    <wsdl:part name="parameters" element="tns:HelloIErrorHandler" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_HelloIErrorHandler_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HelloIErrorHandlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Login_FaultMessageFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/jg.Mes.Service" name="detail" element="q1:FaultMessage" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_LoginStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginStudent" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_LoginStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_SqlBackup_InputMessage">
+    <wsdl:part name="parameters" element="tns:SqlBackup" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_SqlBackup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SqlBackupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetSystemLogInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemLogInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetSystemLogInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemLogInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertSystemLogInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSystemLogInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertSystemLogInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSystemLogInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Authority_InputMessage">
+    <wsdl:part name="parameters" element="tns:Authority" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Authority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetAuthorityInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthorityInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetAuthorityInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthorityInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetRole_AuthorityInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRole_AuthorityInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetRole_AuthorityInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRole_AuthorityInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetRoleInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetRoleInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetDictionary_BusinessInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDictionary_BusinessInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetDictionary_BusinessInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDictionary_BusinessInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetDictionary_PositionalTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDictionary_PositionalTitle" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetDictionary_PositionalTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDictionary_PositionalTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetAcademicYearInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcademicYearInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetAcademicYearInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcademicYearInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertRoleInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRoleInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertRoleInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRoleInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteRoleInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteRoleInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteRoleList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteRoleList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateRoleInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateRoleInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetEmployeeInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetEmployeeInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertEmployeeInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmployeeInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertEmployeeInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmployeeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteEmployeeInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteEmployeeInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteEmployeeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteEmployeeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateEmployeeInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmployeeInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateEmployeeInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmployeeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetEmployee_classInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployee_classInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetEmployee_classInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployee_classInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetDepartmentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetDepartmentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertDepartmentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDepartmentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertDepartmentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDepartmentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteDepartmentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDepartmentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteDepartmentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDepartmentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteDepartmentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDepartmentList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteDepartmentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDepartmentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateDepartmentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDepartmentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateDepartmentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDepartmentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetClassInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetClassInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertClassInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertClassInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteClassInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteClassInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteClassList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteClassList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateClassInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClassInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateClassInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClassInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetStudentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetStudentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertStudentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertStudentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteStudentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteStudentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteStudentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteStudentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateStudentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateStudentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetClassRoomInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassRoomInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetClassRoomInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassRoomInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertClassRoomInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassRoomInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertClassRoomInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertClassRoomInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteClassRoomInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassRoomInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteClassRoomInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassRoomInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteClassRoomList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassRoomList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteClassRoomList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassRoomListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateClassRoomInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClassRoomInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateClassRoomInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClassRoomInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCalendarInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCalendarInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCalendarInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCalendarInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertAcademicYearInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAcademicYearInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertAcademicYearInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAcademicYearInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteAcademicYearInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcademicYearInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteAcademicYearInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcademicYearInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteAcademicYearList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcademicYearList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteAcademicYearList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAcademicYearListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateAcademicYearInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcademicYearInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateAcademicYearInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAcademicYearInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTimeTableInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeTableInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTimeTableInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeTableInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_AddTimetableInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTimetableInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_AddTimetableInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTimetableInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTimeTableitemInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeTableitemInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTimeTableitemInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeTableitemInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTPostInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTPostInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTPostInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTPostInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTPostInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTPostInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTPostInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTPostInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTPostInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTPostInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTPostInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTPostInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTPostInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTPostInfoList" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DeleteTPostInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTPostInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTPostInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTPostInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpdateTPostInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTPostInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTReplyInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTReplyInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetTReplyInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTReplyInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTReplyInfoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTReplyInfoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertTReplyInfoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTReplyInfoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_ShowMessage_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ShowMessage" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_Progress_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:Progress" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DownFileContract_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:DownFileContract" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DownFileContract_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:DownFileContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpLoadFileContract_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFileContract" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpLoadFileContract_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFileContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_DirSourceClassInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_DirSourceClassInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_DirSourceClassInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_DirSourceClassInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_Source_FullInfo_ViewInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_Source_FullInfo_ViewInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_Source_FullInfo_ViewInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_Source_FullInfo_ViewInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DownLoadAsset_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownLoadAsset" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DownLoadAsset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownLoadAssetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DownLoadAssetThumbnail_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownLoadAssetThumbnail" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_DownLoadAssetThumbnail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownLoadAssetThumbnailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertCPDPM_EnCourseWareSourceInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCPDPM_EnCourseWareSourceInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_InsertCPDPM_EnCourseWareSourceInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCPDPM_EnCourseWareSourceInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpLoadCourceWare_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadCourceWare" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_UpLoadCourceWare_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadCourceWareResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttLanguageInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttLanguageInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttLanguageInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttLanguageInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttContextInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttContextInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttContextInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttContextInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttDiffcultyInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttDiffcultyInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttDiffcultyInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttDiffcultyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttInteractivityTypeInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttInteractivityTypeInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttInteractivityTypeInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttInteractivityTypeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttInteractivityLevelInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttInteractivityLevelInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttInteractivityLevelInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttInteractivityLevelInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttMachineInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttMachineInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttMachineInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttMachineInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttOSInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttOSInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMiniEditor_GetCPDPM_AttOSInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPDPM_AttOSInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMiniEditor">
+    <wsdl:operation name="DeleteTReplyInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTReplyInfoInfo" message="tns:IMiniEditor_DeleteTReplyInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTReplyInfoInfoResponse" message="tns:IMiniEditor_DeleteTReplyInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTReplyInfoList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTReplyInfoList" message="tns:IMiniEditor_DeleteTReplyInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTReplyInfoListResponse" message="tns:IMiniEditor_DeleteTReplyInfoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTReplyInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTReplyInfoInfo" message="tns:IMiniEditor_UpdateTReplyInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTReplyInfoInfoResponse" message="tns:IMiniEditor_UpdateTReplyInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTJudgeInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetTJudgeInfoInfo" message="tns:IMiniEditor_GetTJudgeInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetTJudgeInfoInfoResponse" message="tns:IMiniEditor_GetTJudgeInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTJudgeInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTJudgeInfoInfo" message="tns:IMiniEditor_InsertTJudgeInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTJudgeInfoInfoResponse" message="tns:IMiniEditor_InsertTJudgeInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTJudgeInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTJudgeInfoInfo" message="tns:IMiniEditor_DeleteTJudgeInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTJudgeInfoInfoResponse" message="tns:IMiniEditor_DeleteTJudgeInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTJudgeInfoList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTJudgeInfoList" message="tns:IMiniEditor_DeleteTJudgeInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTJudgeInfoListResponse" message="tns:IMiniEditor_DeleteTJudgeInfoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTJudgeInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTJudgeInfoInfo" message="tns:IMiniEditor_UpdateTJudgeInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTJudgeInfoInfoResponse" message="tns:IMiniEditor_UpdateTJudgeInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTStudentBBSInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetTStudentBBSInfoInfo" message="tns:IMiniEditor_GetTStudentBBSInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetTStudentBBSInfoInfoResponse" message="tns:IMiniEditor_GetTStudentBBSInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTStudentBBSInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTStudentBBSInfoInfo" message="tns:IMiniEditor_InsertTStudentBBSInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTStudentBBSInfoInfoResponse" message="tns:IMiniEditor_InsertTStudentBBSInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTStudentBBSInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTStudentBBSInfoInfo" message="tns:IMiniEditor_DeleteTStudentBBSInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTStudentBBSInfoInfoResponse" message="tns:IMiniEditor_DeleteTStudentBBSInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTStudentBBSInfoList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTStudentBBSInfoList" message="tns:IMiniEditor_DeleteTStudentBBSInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTStudentBBSInfoListResponse" message="tns:IMiniEditor_DeleteTStudentBBSInfoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTStudentBBSInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTStudentBBSInfoInfo" message="tns:IMiniEditor_UpdateTStudentBBSInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTStudentBBSInfoInfoResponse" message="tns:IMiniEditor_UpdateTStudentBBSInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTTeacherBBSInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetTTeacherBBSInfoInfo" message="tns:IMiniEditor_GetTTeacherBBSInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetTTeacherBBSInfoInfoResponse" message="tns:IMiniEditor_GetTTeacherBBSInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTTeacherBBSInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTTeacherBBSInfoInfo" message="tns:IMiniEditor_InsertTTeacherBBSInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTTeacherBBSInfoInfoResponse" message="tns:IMiniEditor_InsertTTeacherBBSInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTTeacherBBSInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTTeacherBBSInfoInfo" message="tns:IMiniEditor_DeleteTTeacherBBSInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTTeacherBBSInfoInfoResponse" message="tns:IMiniEditor_DeleteTTeacherBBSInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTTeacherBBSInfoList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTTeacherBBSInfoList" message="tns:IMiniEditor_DeleteTTeacherBBSInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTTeacherBBSInfoListResponse" message="tns:IMiniEditor_DeleteTTeacherBBSInfoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTTeacherBBSInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTTeacherBBSInfoInfo" message="tns:IMiniEditor_UpdateTTeacherBBSInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTTeacherBBSInfoInfoResponse" message="tns:IMiniEditor_UpdateTTeacherBBSInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorityUIInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetAuthorityUIInfo" message="tns:IMiniEditor_GetAuthorityUIInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetAuthorityUIInfoResponse" message="tns:IMiniEditor_GetAuthorityUIInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetLoginList" message="tns:IMiniEditor_GetLoginList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetLoginListResponse" message="tns:IMiniEditor_GetLoginList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Loignsend">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/Loignsend" message="tns:IMiniEditor_Loignsend_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/Update" message="tns:IMiniEditor_Update_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Leave">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/Leave" message="tns:IMiniEditor_Leave_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloException">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/HelloException" message="tns:IMiniEditor_HelloException_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/HelloExceptionResponse" message="tns:IMiniEditor_HelloException_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloFaultException">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/HelloFaultException" message="tns:IMiniEditor_HelloFaultException_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/HelloFaultExceptionResponse" message="tns:IMiniEditor_HelloFaultException_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloFaultExceptionGeneric">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/HelloFaultExceptionGeneric" message="tns:IMiniEditor_HelloFaultExceptionGeneric_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/HelloFaultExceptionGenericResponse" message="tns:IMiniEditor_HelloFaultExceptionGeneric_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloIErrorHandler">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/HelloIErrorHandler" message="tns:IMiniEditor_HelloIErrorHandler_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/HelloIErrorHandlerResponse" message="tns:IMiniEditor_HelloIErrorHandler_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/Login" message="tns:IMiniEditor_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/LoginResponse" message="tns:IMiniEditor_Login_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.jingge.com/Mes/IUser/LoginFaultMessageFault" name="FaultMessageFault" message="tns:IMiniEditor_Login_FaultMessageFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginStudent">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/LoginStudent" message="tns:IMiniEditor_LoginStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/LoginStudentResponse" message="tns:IMiniEditor_LoginStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SqlBackup">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/SqlBackup" message="tns:IMiniEditor_SqlBackup_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/SqlBackupResponse" message="tns:IMiniEditor_SqlBackup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemLogInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetSystemLogInfo" message="tns:IMiniEditor_GetSystemLogInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetSystemLogInfoResponse" message="tns:IMiniEditor_GetSystemLogInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSystemLogInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertSystemLogInfo" message="tns:IMiniEditor_InsertSystemLogInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertSystemLogInfoResponse" message="tns:IMiniEditor_InsertSystemLogInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Authority">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/Authority" message="tns:IMiniEditor_Authority_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/AuthorityResponse" message="tns:IMiniEditor_Authority_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorityInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetAuthorityInfo" message="tns:IMiniEditor_GetAuthorityInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetAuthorityInfoResponse" message="tns:IMiniEditor_GetAuthorityInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRole_AuthorityInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetRole_AuthorityInfo" message="tns:IMiniEditor_GetRole_AuthorityInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetRole_AuthorityInfoResponse" message="tns:IMiniEditor_GetRole_AuthorityInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetRoleInfo" message="tns:IMiniEditor_GetRoleInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetRoleInfoResponse" message="tns:IMiniEditor_GetRoleInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDictionary_BusinessInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetDictionary_BusinessInfo" message="tns:IMiniEditor_GetDictionary_BusinessInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetDictionary_BusinessInfoResponse" message="tns:IMiniEditor_GetDictionary_BusinessInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDictionary_PositionalTitle">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetDictionary_PositionalTitle" message="tns:IMiniEditor_GetDictionary_PositionalTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetDictionary_PositionalTitleResponse" message="tns:IMiniEditor_GetDictionary_PositionalTitle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcademicYearInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetAcademicYearInfo" message="tns:IMiniEditor_GetAcademicYearInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetAcademicYearInfoResponse" message="tns:IMiniEditor_GetAcademicYearInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRoleInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertRoleInfo" message="tns:IMiniEditor_InsertRoleInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertRoleInfoResponse" message="tns:IMiniEditor_InsertRoleInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoleInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteRoleInfo" message="tns:IMiniEditor_DeleteRoleInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteRoleInfoResponse" message="tns:IMiniEditor_DeleteRoleInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoleList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteRoleList" message="tns:IMiniEditor_DeleteRoleList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteRoleListResponse" message="tns:IMiniEditor_DeleteRoleList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoleInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateRoleInfo" message="tns:IMiniEditor_UpdateRoleInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateRoleInfoResponse" message="tns:IMiniEditor_UpdateRoleInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetEmployeeInfo" message="tns:IMiniEditor_GetEmployeeInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetEmployeeInfoResponse" message="tns:IMiniEditor_GetEmployeeInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmployeeInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertEmployeeInfo" message="tns:IMiniEditor_InsertEmployeeInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertEmployeeInfoResponse" message="tns:IMiniEditor_InsertEmployeeInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteEmployeeInfo" message="tns:IMiniEditor_DeleteEmployeeInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteEmployeeInfoResponse" message="tns:IMiniEditor_DeleteEmployeeInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteEmployeeList" message="tns:IMiniEditor_DeleteEmployeeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteEmployeeListResponse" message="tns:IMiniEditor_DeleteEmployeeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeeInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateEmployeeInfo" message="tns:IMiniEditor_UpdateEmployeeInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateEmployeeInfoResponse" message="tns:IMiniEditor_UpdateEmployeeInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee_classInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetEmployee_classInfo" message="tns:IMiniEditor_GetEmployee_classInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetEmployee_classInfoResponse" message="tns:IMiniEditor_GetEmployee_classInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetDepartmentInfo" message="tns:IMiniEditor_GetDepartmentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetDepartmentInfoResponse" message="tns:IMiniEditor_GetDepartmentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDepartmentInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertDepartmentInfo" message="tns:IMiniEditor_InsertDepartmentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertDepartmentInfoResponse" message="tns:IMiniEditor_InsertDepartmentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDepartmentInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteDepartmentInfo" message="tns:IMiniEditor_DeleteDepartmentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteDepartmentInfoResponse" message="tns:IMiniEditor_DeleteDepartmentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDepartmentList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteDepartmentList" message="tns:IMiniEditor_DeleteDepartmentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteDepartmentListResponse" message="tns:IMiniEditor_DeleteDepartmentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepartmentInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateDepartmentInfo" message="tns:IMiniEditor_UpdateDepartmentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateDepartmentInfoResponse" message="tns:IMiniEditor_UpdateDepartmentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetClassInfo" message="tns:IMiniEditor_GetClassInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetClassInfoResponse" message="tns:IMiniEditor_GetClassInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertClassInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertClassInfo" message="tns:IMiniEditor_InsertClassInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertClassInfoResponse" message="tns:IMiniEditor_InsertClassInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteClassInfo" message="tns:IMiniEditor_DeleteClassInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteClassInfoResponse" message="tns:IMiniEditor_DeleteClassInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteClassList" message="tns:IMiniEditor_DeleteClassList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteClassListResponse" message="tns:IMiniEditor_DeleteClassList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClassInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateClassInfo" message="tns:IMiniEditor_UpdateClassInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateClassInfoResponse" message="tns:IMiniEditor_UpdateClassInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetStudentInfo" message="tns:IMiniEditor_GetStudentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetStudentInfoResponse" message="tns:IMiniEditor_GetStudentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStudentInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertStudentInfo" message="tns:IMiniEditor_InsertStudentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertStudentInfoResponse" message="tns:IMiniEditor_InsertStudentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudentInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteStudentInfo" message="tns:IMiniEditor_DeleteStudentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteStudentInfoResponse" message="tns:IMiniEditor_DeleteStudentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudentList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteStudentList" message="tns:IMiniEditor_DeleteStudentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteStudentListResponse" message="tns:IMiniEditor_DeleteStudentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateStudentInfo" message="tns:IMiniEditor_UpdateStudentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateStudentInfoResponse" message="tns:IMiniEditor_UpdateStudentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassRoomInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetClassRoomInfo" message="tns:IMiniEditor_GetClassRoomInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetClassRoomInfoResponse" message="tns:IMiniEditor_GetClassRoomInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertClassRoomInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertClassRoomInfo" message="tns:IMiniEditor_InsertClassRoomInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertClassRoomInfoResponse" message="tns:IMiniEditor_InsertClassRoomInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassRoomInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteClassRoomInfo" message="tns:IMiniEditor_DeleteClassRoomInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteClassRoomInfoResponse" message="tns:IMiniEditor_DeleteClassRoomInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClassRoomList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteClassRoomList" message="tns:IMiniEditor_DeleteClassRoomList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteClassRoomListResponse" message="tns:IMiniEditor_DeleteClassRoomList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClassRoomInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateClassRoomInfo" message="tns:IMiniEditor_UpdateClassRoomInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateClassRoomInfoResponse" message="tns:IMiniEditor_UpdateClassRoomInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendarInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetCalendarInfo" message="tns:IMiniEditor_GetCalendarInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetCalendarInfoResponse" message="tns:IMiniEditor_GetCalendarInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAcademicYearInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertAcademicYearInfo" message="tns:IMiniEditor_InsertAcademicYearInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertAcademicYearInfoResponse" message="tns:IMiniEditor_InsertAcademicYearInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcademicYearInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteAcademicYearInfo" message="tns:IMiniEditor_DeleteAcademicYearInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteAcademicYearInfoResponse" message="tns:IMiniEditor_DeleteAcademicYearInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcademicYearList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteAcademicYearList" message="tns:IMiniEditor_DeleteAcademicYearList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteAcademicYearListResponse" message="tns:IMiniEditor_DeleteAcademicYearList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAcademicYearInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateAcademicYearInfo" message="tns:IMiniEditor_UpdateAcademicYearInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateAcademicYearInfoResponse" message="tns:IMiniEditor_UpdateAcademicYearInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetTimeTableInfo" message="tns:IMiniEditor_GetTimeTableInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetTimeTableInfoResponse" message="tns:IMiniEditor_GetTimeTableInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTimetableInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/AddTimetableInfo" message="tns:IMiniEditor_AddTimetableInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/AddTimetableInfoResponse" message="tns:IMiniEditor_AddTimetableInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableitemInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetTimeTableitemInfo" message="tns:IMiniEditor_GetTimeTableitemInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetTimeTableitemInfoResponse" message="tns:IMiniEditor_GetTimeTableitemInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTPostInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetTPostInfoInfo" message="tns:IMiniEditor_GetTPostInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetTPostInfoInfoResponse" message="tns:IMiniEditor_GetTPostInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTPostInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTPostInfoInfo" message="tns:IMiniEditor_InsertTPostInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTPostInfoInfoResponse" message="tns:IMiniEditor_InsertTPostInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTPostInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTPostInfoInfo" message="tns:IMiniEditor_DeleteTPostInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTPostInfoInfoResponse" message="tns:IMiniEditor_DeleteTPostInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTPostInfoList">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTPostInfoList" message="tns:IMiniEditor_DeleteTPostInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DeleteTPostInfoListResponse" message="tns:IMiniEditor_DeleteTPostInfoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTPostInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTPostInfoInfo" message="tns:IMiniEditor_UpdateTPostInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpdateTPostInfoInfoResponse" message="tns:IMiniEditor_UpdateTPostInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTReplyInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/GetTReplyInfoInfo" message="tns:IMiniEditor_GetTReplyInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/GetTReplyInfoInfoResponse" message="tns:IMiniEditor_GetTReplyInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTReplyInfoInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTReplyInfoInfo" message="tns:IMiniEditor_InsertTReplyInfoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/InsertTReplyInfoInfoResponse" message="tns:IMiniEditor_InsertTReplyInfoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowMessage">
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/ShowMessage" message="tns:IMiniEditor_ShowMessage_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Progress">
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/Progress" message="tns:IMiniEditor_Progress_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownFileContract">
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/DownFileContract" message="tns:IMiniEditor_DownFileContract_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/DownFileContractResponse" message="tns:IMiniEditor_DownFileContract_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFileContract">
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IUser/UpLoadFileContract" message="tns:IMiniEditor_UpLoadFileContract_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IUser/UpLoadFileContractResponse" message="tns:IMiniEditor_UpLoadFileContract_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_DirSourceClassInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_DirSourceClassInfo" message="tns:IMiniEditor_GetCPDPM_DirSourceClassInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_DirSourceClassInfoResponse" message="tns:IMiniEditor_GetCPDPM_DirSourceClassInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_Source_FullInfo_ViewInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_Source_FullInfo_ViewInfo" message="tns:IMiniEditor_GetCPDPM_Source_FullInfo_ViewInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_Source_FullInfo_ViewInfoResponse" message="tns:IMiniEditor_GetCPDPM_Source_FullInfo_ViewInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadAsset">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/DownLoadAsset" message="tns:IMiniEditor_DownLoadAsset_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/DownLoadAssetResponse" message="tns:IMiniEditor_DownLoadAsset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadAssetThumbnail">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/DownLoadAssetThumbnail" message="tns:IMiniEditor_DownLoadAssetThumbnail_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/DownLoadAssetThumbnailResponse" message="tns:IMiniEditor_DownLoadAssetThumbnail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCPDPM_EnCourseWareSourceInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/InsertCPDPM_EnCourseWareSourceInfo" message="tns:IMiniEditor_InsertCPDPM_EnCourseWareSourceInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/InsertCPDPM_EnCourseWareSourceInfoResponse" message="tns:IMiniEditor_InsertCPDPM_EnCourseWareSourceInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadCourceWare">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/UpLoadCourceWare" message="tns:IMiniEditor_UpLoadCourceWare_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/UpLoadCourceWareResponse" message="tns:IMiniEditor_UpLoadCourceWare_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_AttLanguageInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttLanguageInfo" message="tns:IMiniEditor_GetCPDPM_AttLanguageInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttLanguageInfoResponse" message="tns:IMiniEditor_GetCPDPM_AttLanguageInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_AttContextInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttContextInfo" message="tns:IMiniEditor_GetCPDPM_AttContextInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttContextInfoResponse" message="tns:IMiniEditor_GetCPDPM_AttContextInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_AttDiffcultyInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttDiffcultyInfo" message="tns:IMiniEditor_GetCPDPM_AttDiffcultyInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttDiffcultyInfoResponse" message="tns:IMiniEditor_GetCPDPM_AttDiffcultyInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_AttInteractivityTypeInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttInteractivityTypeInfo" message="tns:IMiniEditor_GetCPDPM_AttInteractivityTypeInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttInteractivityTypeInfoResponse" message="tns:IMiniEditor_GetCPDPM_AttInteractivityTypeInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_AttInteractivityLevelInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttInteractivityLevelInfo" message="tns:IMiniEditor_GetCPDPM_AttInteractivityLevelInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttInteractivityLevelInfoResponse" message="tns:IMiniEditor_GetCPDPM_AttInteractivityLevelInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_AttMachineInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttMachineInfo" message="tns:IMiniEditor_GetCPDPM_AttMachineInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttMachineInfoResponse" message="tns:IMiniEditor_GetCPDPM_AttMachineInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPDPM_AttOSInfo">
+      <wsdl:input wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttOSInfo" message="tns:IMiniEditor_GetCPDPM_AttOSInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.jingge.com/Mes/IMiniEditor/GetCPDPM_AttOSInfoResponse" message="tns:IMiniEditor_GetCPDPM_AttOSInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

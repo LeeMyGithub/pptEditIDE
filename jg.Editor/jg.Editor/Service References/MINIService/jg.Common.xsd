@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/jg.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model" />
+  <xs:complexType name="BaseValidationEntityOfTReplyInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TReplyInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q1:TReplyInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfTReplyInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfTReplyInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfTJudgeInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TJudgeInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q2:TJudgeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfTJudgeInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfTJudgeInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfEmployeeInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="EmployeeInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q3:EmployeeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfEmployeeInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfEmployeeInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfClassInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ClassInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q4:ClassInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfClassInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfClassInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfDepartmentInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DepartmentInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q5:DepartmentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfDepartmentInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfDepartmentInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfRoleInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="RoleInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q6:RoleInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfRoleInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfRoleInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfRole_AuthorityInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Role_AuthorityInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q7:Role_AuthorityInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfRole_AuthorityInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfRole_AuthorityInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfAuthorityUI1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AuthorityUI" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q8:AuthorityUI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfAuthorityUI1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfAuthorityUI1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfModuleAuthority1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ModuleAuthority" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q9:ModuleAuthority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfModuleAuthority1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfModuleAuthority1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfOperationAuthorityType1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="OperationAuthorityType" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q10:OperationAuthorityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfOperationAuthorityType1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfOperationAuthorityType1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfTPostInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TPostInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q11:TPostInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfTPostInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfTPostInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfStudentInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="StudentInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q12:StudentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfStudentInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfStudentInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfTStudentBBSInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TStudentBBSInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q13:TStudentBBSInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfTStudentBBSInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfTStudentBBSInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfCPDPM_AuthorityUI1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CPDPM_AuthorityUI" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q14:CPDPM_AuthorityUI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfCPDPM_AuthorityUI1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfCPDPM_AuthorityUI1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfCPDPM_ModuleAuthority1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CPDPM_ModuleAuthority" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q15:CPDPM_ModuleAuthority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfCPDPM_ModuleAuthority1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfCPDPM_ModuleAuthority1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfCPDPM_OperationAuthorityType1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CPDPM_OperationAuthorityType" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q16:CPDPM_OperationAuthorityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfCPDPM_OperationAuthorityType1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfCPDPM_OperationAuthorityType1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfCPDPM_User1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CPDPM_User" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q17:CPDPM_User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfCPDPM_User1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfCPDPM_User1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfCPDPM_Role1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CPDPM_Role" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q18:CPDPM_Role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfCPDPM_Role1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfCPDPM_Role1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfSystemLogInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="SystemLogInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q19:SystemLogInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfSystemLogInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfSystemLogInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfUserInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="UserInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q20:UserInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfUserInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfUserInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfAuthorityInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AuthorityInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q21:AuthorityInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfAuthorityInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfAuthorityInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfAcademicYearInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="AcademicYearInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q22:AcademicYearInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfAcademicYearInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfAcademicYearInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfCalendarInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CalendarInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q23:CalendarInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfCalendarInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfCalendarInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfTimetableInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TimetableInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q24:TimetableInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfTimetableInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfTimetableInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfClassRoomInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ClassRoomInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q25:ClassRoomInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfClassRoomInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfClassRoomInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfCurriculumInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CurriculumInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q26:CurriculumInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfCurriculumInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfCurriculumInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfSpecialty_TreeInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Specialty_TreeInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q27:Specialty_TreeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfSpecialty_TreeInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfSpecialty_TreeInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfTimetableitemInfo1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TimetableitemInfo" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q28:TimetableitemInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfTimetableitemInfo1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfTimetableitemInfo1GsoOl5m" />
+  <xs:complexType name="BaseValidationEntityOfCPDPM_DirSourceClass1GsoOl5m">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseValidationEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/jg.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CPDPM_DirSourceClass" Namespace="http://schemas.datacontract.org/2004/07/jg.Mes.Model">
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/jg.Mes.Model" name="_entity" nillable="true" type="q29:CPDPM_DirSourceClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseValidationEntityOfCPDPM_DirSourceClass1GsoOl5m" nillable="true" type="tns:BaseValidationEntityOfCPDPM_DirSourceClass1GsoOl5m" />
+</xs:schema>

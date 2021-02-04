@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="jg.Editor.Library.Property.ControlPropertyTopicDrag"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"   xmlns:xceed="clr-namespace:Xceed.Wpf.Toolkit;assembly=WPFToolkit.Extended"
+             Height="{Binding Height,ElementName=grid}" 
+             d:DesignWidth="258">
+
+    <Grid Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="auto" />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="项目数量" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="txtItemCount1" TextChanged="txt_TextChanged" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="干扰项" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="txtItemCount2" TextChanged="txt_TextChanged" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center"/>
+
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="分值" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed"/>
+        <TextBox Name="txtScore" TextChanged="txtScore_TextChanged" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Visibility="Collapsed"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="(非)前景色：" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="(非)背景色：" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="前景色：" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Grid.Row="3" Grid.Column="2" Text="背景色：" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <xceed:ColorPicker x:Name="colorOtherFor" Grid.Row="2" Grid.Column="1"  VerticalAlignment="Center"/>
+        <xceed:ColorPicker x:Name="colorOtherBack" Grid.Row="2" Grid.Column="3"  VerticalAlignment="Center"/>
+
+        <xceed:ColorPicker x:Name="colorAnwerFor" Grid.Row="3" Grid.Column="1"  VerticalAlignment="Center"/>
+        <xceed:ColorPicker x:Name="colorAnwerBack" Grid.Row="3" Grid.Column="3"  VerticalAlignment="Center"/>
+
+        <Grid Name="gridItem" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </Grid>
+</UserControl>

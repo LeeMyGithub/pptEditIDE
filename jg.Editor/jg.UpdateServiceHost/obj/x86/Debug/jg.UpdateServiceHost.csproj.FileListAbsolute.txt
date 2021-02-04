@@ -1,0 +1,83 @@
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.UpdateServiceHost.exe.config
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.UpdateServiceHost.exe
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.UpdateServiceHost.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.UpdateService.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\bin\Debug\jg.UpdateService.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\JinggeUpdateHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+E:\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+E:\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+E:\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+E:\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+E:\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+E:\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+E:\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+E:\10_10_20_240_MINI2\123\jg.Editor ____20140812\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojResolveAssemblyReference.cache
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe.config
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.exe
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateServiceHost.pdb
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.pdb
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\bin\Debug\jg.UpdateService.dll.config
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csprojAssemblyReference.cache
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csproj.CoreCompileInputs.cache
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.csproj.CopyComplete
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.exe
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateServiceHost\obj\x86\Debug\jg.UpdateServiceHost.pdb

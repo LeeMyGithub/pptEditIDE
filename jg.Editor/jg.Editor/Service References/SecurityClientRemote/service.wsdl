@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_TotalLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:TotalLicense" />
+  </wsdl:message>
+  <wsdl:message name="IService_TotalLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TotalLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_CurrentLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentLicense" />
+  </wsdl:message>
+  <wsdl:message name="IService_CurrentLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Checked_InputMessage">
+    <wsdl:part name="parameters" element="tns:Checked" />
+  </wsdl:message>
+  <wsdl:message name="IService_Checked_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Activation_InputMessage">
+    <wsdl:part name="parameters" element="tns:Activation" />
+  </wsdl:message>
+  <wsdl:message name="IService_Activation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_HelloWorld_InputMessage">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="IService_HelloWorld_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_LogOff_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:LogOff" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="TotalLicense">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/TotalLicense" message="tns:IService_TotalLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/TotalLicenseResponse" message="tns:IService_TotalLicense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CurrentLicense">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CurrentLicense" message="tns:IService_CurrentLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CurrentLicenseResponse" message="tns:IService_CurrentLicense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Login" message="tns:IService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/LoginResponse" message="tns:IService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Checked">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Checked" message="tns:IService_Checked_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CheckedResponse" message="tns:IService_Checked_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Activation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Activation" message="tns:IService_Activation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ActivationResponse" message="tns:IService_Activation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/HelloWorld" message="tns:IService_HelloWorld_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/HelloWorldResponse" message="tns:IService_HelloWorld_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LogOff">
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/LogOff" message="tns:IService_LogOff_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IService" type="tns:IService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="TotalLicense">
+      <soap12:operation soapAction="http://tempuri.org/IService/TotalLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CurrentLicense">
+      <soap12:operation soapAction="http://tempuri.org/IService/CurrentLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/IService/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Checked">
+      <soap12:operation soapAction="http://tempuri.org/IService/Checked" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Activation">
+      <soap12:operation soapAction="http://tempuri.org/IService/Activation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/IService/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOff">
+      <soap12:operation soapAction="http://tempuri.org/IService/LogOff" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

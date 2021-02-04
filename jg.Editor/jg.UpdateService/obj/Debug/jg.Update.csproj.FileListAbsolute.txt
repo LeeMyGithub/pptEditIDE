@@ -1,0 +1,5 @@
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\bin\Debug\jg.Update.dll.config
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\bin\Debug\jg.Update.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\bin\Debug\jg.Update.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\obj\Debug\jg.Update.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\obj\Debug\jg.Update.pdb

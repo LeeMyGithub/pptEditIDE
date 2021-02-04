@@ -1,0 +1,58 @@
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\bin\Debug\jg.UpdateService.dll.config
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\bin\Debug\jg.UpdateService.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\bin\Debug\jg.UpdateService.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\obj\Debug\jg.UpdateService.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\JinggeUpdate\obj\Debug\jg.UpdateService.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb
+E:\工作\TFS\DevSrc\项目源码\平台NTP01\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.csprojResolveAssemblyReference.cache
+C:\Users\lihongwei.RUGU\Desktop\新建文件夹 (7)\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+C:\Users\lihongwei.RUGU\Desktop\新建文件夹 (7)\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+C:\Users\lihongwei.RUGU\Desktop\新建文件夹 (7)\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+C:\Users\lihongwei.RUGU\Desktop\新建文件夹 (7)\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.csprojResolveAssemblyReference.cache
+C:\Users\lihongwei.RUGU\Desktop\新建文件夹 (7)\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+C:\Users\lihongwei.RUGU\Desktop\新建文件夹 (7)\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.csprojResolveAssemblyReference.cache
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\编辑器\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+E:\工作\WPF编辑器\编辑器 2014-05-23\编辑器\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.csprojResolveAssemblyReference.cache
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\123\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb
+G:\编辑器\jg.Editor ____20140812\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+G:\编辑器\jg.Editor ____20140812\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+G:\编辑器\jg.Editor ____20140812\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+G:\编辑器\jg.Editor ____20140812\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.csprojResolveAssemblyReference.cache
+G:\编辑器\jg.Editor ____20140812\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+G:\编辑器\jg.Editor ____20140812\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+G:\编辑器\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.csprojResolveAssemblyReference.cache
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+E:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll.config
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.dll
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateService\bin\Debug\jg.UpdateService.pdb
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.csprojAssemblyReference.cache
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.csproj.CoreCompileInputs.cache
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.dll
+D:\BaiduNetdiskDownload\jg.Editor 3\jg.Editor\jg.UpdateService\obj\Debug\jg.UpdateService.pdb

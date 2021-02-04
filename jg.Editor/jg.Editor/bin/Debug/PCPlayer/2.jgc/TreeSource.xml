@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<ArrayOfTreeViewItemInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TreeViewItemInfo WpfVisibility="Visible" Id="9282c396-41ae-4f7c-8d1a-d1735b09a1bf" Title="目录1" Height="20" ParentId="00000000-0000-0000-0000-000000000000" IsSelected="true" IsEdit="false" Sort="0" IsTxtVisabled="Collapsed" IsTbVisabled="Visible" isUpVis="Collapsed" isDownVis="Collapsed" />
+</ArrayOfTreeViewItemInfo>

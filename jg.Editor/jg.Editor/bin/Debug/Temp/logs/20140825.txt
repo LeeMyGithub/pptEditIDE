@@ -1,0 +1,14 @@
+记录时间：2014-08-25 17:21:39,849 线程ID:[8] 日志级别：ERROR 所属类：jg.Editor.MainWindow property:[(null)] - 描述：路径的形式不合法。
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 jg.Editor.MainWindow.SetFileSetConfig() 位置 e:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.Editor\MainWindow.xaml.cs:行号 1548
+   在 jg.Editor.MainWindow.btnLoad_Click(Object sender, RoutedEventArgs e) 位置 e:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.Editor\MainWindow.xaml.cs:行号 1530
+记录时间：2014-08-25 17:22:49,261 线程ID:[8] 日志级别：ERROR 所属类：jg.Editor.MainWindow property:[(null)] - 描述：路径的形式不合法。
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 jg.Editor.MainWindow.SetFileSetConfig() 位置 e:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.Editor\MainWindow.xaml.cs:行号 1548
+   在 jg.Editor.MainWindow.btnLoad_Click(Object sender, RoutedEventArgs e) 位置 e:\10_10_20_240_MINI2\123\jg.Editor 201-08-22\jg.Editor\jg.Editor\MainWindow.xaml.cs:行号 1530

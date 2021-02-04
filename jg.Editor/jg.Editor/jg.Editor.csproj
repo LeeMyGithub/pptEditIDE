@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE30DD16-9D7C-4C22-A746-D844FA409FCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jg.Editor</RootNamespace>
+    <AssemblyName>jg.Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>jg.Editor.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Editor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aliyun.OpenServices">
+      <HintPath>bin\Debug\Lib\Aliyun.OpenServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Geckofx-Core, Version=29.0.1.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Geckofx-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Geckofx-Winforms, Version=29.0.1.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Geckofx-Winforms.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\jg.Editor.Library\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="jg.Security.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\jg.Security.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WPF\Customer\ExtendedWPFToolkitSolution\ExtendedWPFToolkitSolution\Src\Samples\Samples.Infrastructure\bin\Debug\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Windows.Shell, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Windows.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFToolkit.Extended, Version=1.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddLock.xaml.cs">
+      <DependentUpon>AddLock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Aliyun.cs" />
+    <Compile Include="AssetMessage\WindowAssetSel.xaml.cs">
+      <DependentUpon>WindowAssetSel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchTimer.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="HTML5Class.cs" />
+    <Compile Include="ImpHtml.xaml.cs">
+      <DependentUpon>ImpHtml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalRes.xaml.cs">
+      <DependentUpon>LocalRes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Master\CenterChildHelper.cs" />
+    <Compile Include="Master\FullScreenManager.cs" />
+    <Compile Include="Master\MyMacClass.cs" />
+    <Compile Include="Master\MyMacClassChildren.cs" />
+    <Compile Include="Master\MyMacClassNoMesandNoResize.cs" />
+    <Compile Include="Master\MyMacClassNoresize.cs" />
+    <Compile Include="Master\MyMacNoShowMessage.cs" />
+    <Compile Include="Master\NoClassWin.cs" />
+    <Compile Include="Master\SingleInstance.cs" />
+    <Compile Include="Master\Win32.cs" />
+    <Compile Include="Master\WinControlSetting.cs" />
+    <Compile Include="Master\WinMasterMain.cs" />
+    <Compile Include="Property\FontCollection.cs" />
+    <Compile Include="Resources\MacStyledWindow.xaml.cs">
+      <DependentUpon>MacStyledWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NopService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Service References\MINIService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SecurityClientRemote\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="test.xaml.cs">
+      <DependentUpon>test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TestZip.xaml.cs">
+      <DependentUpon>TestZip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ItemsControlExtensions.cs" />
+    <Compile Include="Utilities\TypeUtilities.cs" />
+    <Compile Include="Utilities\VisualTreeExtensions.cs" />
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinProBusy.xaml.cs">
+      <DependentUpon>WinProBusy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowAssetSel.xaml.cs">
+      <DependentUpon>WindowAssetSel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowLogin.xaml.cs">
+      <DependentUpon>windowLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowQuestion.xaml.cs">
+      <DependentUpon>windowQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windowSave.xaml.cs">
+      <DependentUpon>windowSave.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="Image\LogoEffect.ps" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Resources\jg.UpdateClient.exe.config" />
+    <None Include="Service References\MINIService\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\jg.Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.AcademicYearInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.AuthorityInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CalendarInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.ClassInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.ClassRoomInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_AttContext.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_AttDiffculty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_AttInteractivityLevel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_AttInteractivityType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_AttLanguage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_AttMachine.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_AttOS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_AuthorityUI.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_DirSourceClass.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_Source_FullInfo_View.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.CPDPM_User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.DepartmentInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.Dictionary_BusinessInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.Dictionary_PositionalTitleInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.EmployeeInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.Employee_ClassInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.RoleInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.Role_AuthorityInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.StudentInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.SystemLogInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.TimetableInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.TimetableitemInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.TJudgeInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.TPostInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.TReplyInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.TStudentBBSInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Editor.MINIService.TTeacherBBSInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MINIService\jg.Mes.Model.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\jg.Mes.Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\Mes.wsdl" />
+    <None Include="Service References\MINIService\Mes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\service.wsdl" />
+    <None Include="Service References\MINIService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\System.Windows.Media.Animation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\System.Windows.Media.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\System.Windows.Threading.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MINIService\System.Windows.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NopService\Arrays1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NopService\jg.Editor.NopService.OrderError.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NopService\Nop.Plugin.Misc.WebServices1.wsdl" />
+    <None Include="Service References\NopService\Nop.Plugin.Misc.WebServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NopService\Nop.Plugin.Misc.WebServices21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NopService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NopService\service1.wsdl" />
+    <None Include="Service References\NopService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SecurityClientRemote\SecurityClient.wsdl" />
+    <None Include="Service References\SecurityClientRemote\service.wsdl" />
+    <None Include="Service References\SecurityClientRemote\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SecurityClientRemote\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AddLock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AssetMessage\WindowAssetSel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ImpHtml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LocalRes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Property\PropertyManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Brushes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ButtonSty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\CboCommonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\DesignerItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Document.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Expander.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\LabelStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\MacStyledButtonBrushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\MacStyledTitleBarButtons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\MacStyledWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\MetroStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ResizeChrome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\RichTextBoxRes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ScrollBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ScrollViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Silver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Slider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\StatusBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\TextBlockStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\TextBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Toolbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Tooltip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\TreeViewItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\White.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ZoomBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stencils\BasicShapes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Stencils\FlowChartSymbols.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Stencils\RegelungstechnikSymbole.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Stencils\Shape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Stencils\SymbolStencils.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Stencils\ToolBoxAsset.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TestZip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinProBusy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowAssetSel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windowSave.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxUnityWebPlayerAXLib">
+      <Guid>{75A564FE-95D1-41A9-B1D9-10D1E3CB502B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="UnityWebPlayerAXLib">
+      <Guid>{75A564FE-95D1-41A9-B1D9-10D1E3CB502B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fluent\Fluent dotNET 4.0.csproj">
+      <Project>{4c92fcf4-3561-499f-bc5b-f2f089863047}</Project>
+      <Name>Fluent dotNET 4.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\jg.Editor.Library\jg.Editor.Library.csproj">
+      <Project>{5A1F88DA-EF12-47F2-BE91-9E9E2198F081}</Project>
+      <Name>jg.Editor.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\jg.PCPlayerLibrary\jg.PCPlayerLibrary.csproj">
+      <Project>{f6247322-f219-4beb-b495-c0b294c027e4}</Project>
+      <Name>jg.PCPlayerLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skybound.Gecko\Skybound.Gecko.csproj">
+      <Project>{877d1a24-2d5e-4c46-a933-fcf11ea0403b}</Project>
+      <Name>Skybound.Gecko</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\IconLock.png" />
+    <Resource Include="Image\IconVisible.png" />
+    <Resource Include="Image\Top_3DModel_Normal.png" />
+    <Resource Include="Image\Top_Add_Normal.png" />
+    <Resource Include="Image\Top_Add_Preview.png" />
+    <Resource Include="Image\Top_Animation_Normal.png" />
+    <Resource Include="Image\Top_Audio_Normal.png" />
+    <Resource Include="Image\Top_Copy_Normal.png" />
+    <Resource Include="Image\Top_Cut_Normal.png" />
+    <Resource Include="Image\Top_DragandDrop_Normal.png" />
+    <Resource Include="Image\Top_Graph_Normal.png" />
+    <Resource Include="Image\Top_Grid_Normal.png" />
+    <Resource Include="Image\Top_Multiplechoice_Normal.png" />
+    <Resource Include="Image\Top_Open_Normal.png" />
+    <Resource Include="Image\Top_Page_Add.png" />
+    <Resource Include="Image\Top_Page_Del.png" />
+    <Resource Include="Image\Top_Paste_Normal.png" />
+    <Resource Include="Image\Top_Picture_Normal.png" />
+    <Resource Include="Image\Top_Redo_Normal.PNG" />
+    <Resource Include="Image\Top_Release_Normal.png" />
+    <Resource Include="Image\Top_Save_Normal.png" />
+    <Resource Include="Image\Top_Text_Normal.png" />
+    <Resource Include="Image\Top_Undo_Normal.PNG" />
+    <Resource Include="Image\Top_Video_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MINIService\" />
+    <WCFMetadataStorage Include="Service References\NopService\" />
+    <WCFMetadataStorage Include="Service References\SecurityClientRemote\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Align_Bottom.png" />
+    <Resource Include="Image\Align_Left.png" />
+    <Resource Include="Image\Align_Right.png" />
+    <Resource Include="Image\Align_Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Login_Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Top_Document_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SecurityClientRemote\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SecurityClientRemote\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SecurityClientRemote\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Editor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MINIService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MINIService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MINIService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NopService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NopService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NopService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Top_aligning_Normal.png" />
+    <Resource Include="Image\Top_help_Normal.png" />
+    <Resource Include="Image\Top_html5_Normal.png" />
+    <Resource Include="Image\Top_save as_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Top_retroaction_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Top_ImgGroup_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\AssetLoadingIcon.png" />
+    <Resource Include="Image\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\NullIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Top_save-as_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jg.UpdateClient.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Rightcopy.png" />
+    <Resource Include="Image\Rightcut.png" />
+    <Resource Include="Image\Rightdel.png" />
+    <Resource Include="Image\RightDown.png" />
+    <Resource Include="Image\Rightedit.png" />
+    <Resource Include="Image\Righten.png" />
+    <Resource Include="Image\Rightleft.png" />
+    <Resource Include="Image\RightNew.png" />
+    <Resource Include="Image\Rightpaste.png" />
+    <Resource Include="Image\Rightright.png" />
+    <Resource Include="Image\Rightup.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
